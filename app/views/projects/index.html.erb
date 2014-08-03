@@ -1,6 +1,6 @@
 <h1>Rira Choi's Projects</h1>
 
-<div class="best_homeworks">
+<div class="best_homeworks" id='best_homeworks'>
 
   <% @projects.each do |project| %>
     <% class_name = project.title.gsub(/ /,"") %>
@@ -14,27 +14,26 @@
   <% @projects.each do |project| %>
   <% class_name = project.title.gsub(/ /,"") %>
     <div id="<%= class_name %>" class="text">
+  <!--main image -->
       <%= image_tag(project.main_image, :id => class_name)%>
 
+  <!--projects detains -->
       <h2 class="project_name"><%= project.title %></h2>
 
       <p>Date: <%= project.date %></p>
       <p>Built By: <%= project.program %></p>
-      <p><%= link_to('Check it out with image description', project_path(:id => project.id))%></p>
+      <h3 id='checkOut'><%= link_to('Check it out with image description', project_path(:id => project.id))%></h3>
 
-
-
-        <ol class='des_images'>
-        <% project.images do |img|%>
-          <li><%= image_tag(img, :id => class_name )%></li>
-        <% end %>
-        </ol>
+  <!--small images -->
+      <section id="<%= class_name %>" class='images'>
+        <% project.images.each do |image| %>
+          <%= link_to(image_tag(image, :class => "small_images"), image, :title => project.title, :id=>'preview') %>
+        <%end %>
+      </section>
 
     </div>
   <% end %>
 </div>
-
-
 
 
 <div class="homeworks"></div>
