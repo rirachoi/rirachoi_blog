@@ -24,8 +24,12 @@
 
 .weekContainer:hover{
   background-color: #005200;
+  color: yellow;
 }
 
+.weekNum:hover{
+  color: white;
+}
 
 
 

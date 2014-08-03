@@ -22,4 +22,7 @@ $(document).ready(function(){
       createBoxes();
 
   $('.weekContainer').on('click', showWeekDetails);
+  $('.weekContainer').on('mouseover',function(){
+    $('.weekNum').css({"color":"white;"});
+  });
 }); // end of document.ready

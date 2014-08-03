@@ -37,7 +37,8 @@ imagePreview = function(){
          $("#preview_img")
             .css("top",(e.pageY - xOffset) + "px")
             .css("left",(e.pageX + yOffset) + "px")
-            .fadeIn('slow').addClass('boxAnimation-target');
+            .fadeIn('slow')
+            .addClass('boxAnimation-target');
     },
 
     function(){
