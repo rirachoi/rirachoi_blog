@@ -7,7 +7,8 @@
 #  date              :string(255)
 #  program           :string(255)
 #  description       :text
-#  image             :string(255)
+#  main_image        :string(255)
+#  images            :text             default([]), is an Array
 #  image_description :text             default([]), is an Array
 #  day_id            :integer
 #  week_id           :integer

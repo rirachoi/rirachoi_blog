@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
     @projects = Project.all
       respond_to do |format|
         format.html {}
-        format.json{ render :json => @flights }
+        format.json{ render :json => @projects }
       end
   end
 
@@ -14,6 +14,6 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @Project = Project.find params[:id]
+    @project = Project.find params[:id]
   end
 end

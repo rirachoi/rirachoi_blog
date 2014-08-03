@@ -5,7 +5,8 @@ class CreateProjects < ActiveRecord::Migration
       t.string :date
       t.string :program
       t.text :description
-      t.string :image
+      t.string :main_image
+      t.text :images, array: true, default: []
       t.text :image_description, array: true, default: []
       t.integer :day_id
       t.integer :week_id

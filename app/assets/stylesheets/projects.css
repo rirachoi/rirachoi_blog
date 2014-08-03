@@ -1,0 +1,61 @@
+.best_homeworks img{
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.mainIMG{
+  width: 400px;
+  height: 250px;
+}
+
+.best_homeworks{
+  width: 850px;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+#content{
+  width:824px;
+  height:900px;
+  margin:auto auto -200px auto;
+  margin-left: 100px;
+  background:transparent url(content_background.png) no-repeat top left;
+  text-align: center;
+}
+
+#content img {
+  width: 300px;
+  height: 250px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+#content > li {
+  text-decoration: none;
+}
+
+/* Project Show Page */
+
+#project_details{
+  width: 700px;
+}
+
+#show_imgs, #img_description{
+  display: inline-block;
+  margin: 10px auto 10px auto;
+}
+
+.imgs{
+  width: 300px;
+}
+
+.desIMG{
+  width: 300px;
+}
+
+img{
+  border-radius: 10px;
+}
+

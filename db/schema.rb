@@ -43,7 +43,8 @@ ActiveRecord::Schema.define(version: 20140802065444) do
     t.string   "date"
     t.string   "program"
     t.text     "description"
-    t.string   "image"
+    t.string   "main_image"
+    t.text     "images",            default: [], array: true
     t.text     "image_description", default: [], array: true
     t.integer  "day_id"
     t.integer  "week_id"

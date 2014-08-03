@@ -1,2 +1,20 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+
+  <h1><%= @project.title%></h1>
+  <div id='project_details'>
+    <p id="project_date"><%= @project.date%></p>
+    <p id="program"><%= @project.program%></p>
+    <p id="main_img"><%= image_tag(@project.main_image, :class => 'mainIMG') %></p>
+
+    <div id='show_imgs'>
+      <% @project.images.each do |img|%>
+      <p><%= image_tag(img, :class => 'imgs')%></p>
+      <% end %>
+    </div>
+
+    <div id='img_descriptions'>
+      <% @project.image_description.each do |img_des|%>
+      <p><%= image_tag(img_des, :class => 'desIMG')%></p>
+      <% end %>
+    </div>
+
+  </div>

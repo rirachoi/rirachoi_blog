@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
   var createBoxes = function(){
@@ -16,6 +17,9 @@ $(document).ready(function(){
 
   }
 
-  createBoxes();
+
+
+      createBoxes();
+
   $('.weekContainer').on('click', showWeekDetails);
 }); // end of document.ready
