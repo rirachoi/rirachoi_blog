@@ -27,9 +27,10 @@
   color: yellow;
 }
 
-.weekNum:hover{
+.weekContainer:hover .weekNum{
   color: white;
 }
+
 
 
 

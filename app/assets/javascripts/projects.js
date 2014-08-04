@@ -57,7 +57,7 @@ imagePreview = function(){
 /////////////// main_imgs click
   $('.best_homeworks > img').on('click', function(){
       $('#content').show();
-
+//
       var name = this.className;
 
       $('#content').animate({marginTop:-100}, 1000,function(){
