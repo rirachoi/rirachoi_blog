@@ -7,7 +7,7 @@ body{
 }
 
 .bg{
-  background: url(notebook_background.png) repeat;
+  background: url(notebook-background.png) repeat;
   position: fixed;
   background-size: 100%;
   width: 100%;

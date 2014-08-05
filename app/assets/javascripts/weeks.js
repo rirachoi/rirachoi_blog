@@ -1,5 +1,5 @@
 
-var $currentWeekId;
+
 
 $(document).ready(function(){
 
@@ -15,21 +15,20 @@ $(document).ready(function(){
 
     for(var i=0; i<(response.length); i++){
       var $weekContainer = $('<div class="weekContainer boxAnimation-target"></div>');
-      var $idP = $('<p id="currentWeekId" style="display:none;">'+response[i].id+'</p>');
+      var $idP = $('<p class="currentWeekId" style="display:none;">'+response[i].id+'</p>');
       $currentWeekId = $idP.text();
       var $weekLetter = $('<p class="weekLetter">Week <span class="weekNum">'+ (i+1) +'</span></p>');
       $shadow = $('<div class="shadow/>');
       $weekContainer.append($weekLetter).append($idP).append($shadow);
       $('.weeks').append($weekContainer);
     }
-  });
 
 
-/////////// after click the week container /////////
-
-  $('.weekContainer').on('click', function(event){
+    $('.weekContainer').on('click', function(event){
+      var $weekId = $(event.target).text();
+      console.log($weekId);
       $.ajax({
-        url: '/prjects/'+ $currentWeekId,
+        url: '/prjects/'+ $weekId,
         dataType: 'json'
       }).done(function(r){
         console.log(r);
@@ -37,10 +36,14 @@ $(document).ready(function(){
         console.log(r.proejcts);
       });
 
-
-
+     console.log('why why why why');
+  });
 
   });
+
+
+/////////// after click the week container /////////
+
 
 
 

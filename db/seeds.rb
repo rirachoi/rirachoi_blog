@@ -3,23 +3,23 @@ Day.destroy_all
 Homework.destroy_all
 Project.destroy_all
 
-w1 = Week.create(:name => 'Week1', :study => ['Commandline','Ruby','Debugging','Git'])
-w2 = Week.create(:name => 'Week2', :study => ['HTML','CSS','Sinatra','API'])
-w3 = Week.create(:name => 'Week3', :study => ['Sinatra with SQL', 'Active Record'])
-w4 = Week.create(:name => 'Week4', :study => ['Ruby on Rails', 'Deployment'])
-w5 = Week.create(:name => 'Week5', :study => ['First Project'])
-w6 = Week.create(:name => 'Week6', :study => ['Javascript'])
-w7 = Week.create(:name => 'Week7', :study => ['jQuery'])
-w8 = Week.create(:name => 'Week8', :study => ['Second Project'])
-w9 = Week.create(:name => 'Week9', :study => ['Backbone', 'Test.rb'])
-w10 = Week.create(:name => 'Week10', :study => [])
-w11 = Week.create(:name => 'Week11', :study => [])
-w12 = Week.create(:name => 'Week12', :study => ['Last Project'])
+w1 = Week.create(:name => 'Week 1', :study => ['Commandline','Ruby','Debugging','Git'])
+w2 = Week.create(:name => 'Week 2', :study => ['HTML','CSS','Sinatra','API'])
+w3 = Week.create(:name => 'Week 3', :study => ['Sinatra with SQL', 'Active Record'])
+w4 = Week.create(:name => 'Week 4', :study => ['Ruby on Rails', 'Deployment'])
+w5 = Week.create(:name => 'Week 5', :study => ['First Project'])
+w6 = Week.create(:name => 'Week 6', :study => ['Javascript'])
+w7 = Week.create(:name => 'Week 7', :study => ['jQuery'])
+w8 = Week.create(:name => 'Week 8', :study => ['Second Project'])
+w9 = Week.create(:name => 'Week 9', :study => ['Backbone', 'Test.rb'])
+w10 = Week.create(:name => 'Week 10', :study => [])
+w11 = Week.create(:name => 'Week 11', :study => [])
+w12 = Week.create(:name => 'Week 12', :study => ['Last Project'])
 
 
 p1 = Project.create(
   title: 'Happytails',
-  date: 'Week1 Day5',
+  date: 'Week 1 Day 5',
   program: 'Ruby',
   main_image: "/assets/image/mta/main.png",
   images: [
@@ -38,7 +38,7 @@ p1 = Project.create(
 
 p2 = Project.create(
   title: 'Trip Planner',
-  date: 'Week2 Day4',
+  date: 'Week 2 Day 4',
   program: 'Ruby with Sinatra',
   main_image: "/assets/image/mta/main.png",
   images: [
@@ -56,7 +56,7 @@ p2 = Project.create(
   )
 p3 = Project.create(
   title: 'Butterflies in AUS',
-  date: 'Week3 Day2',
+  date: 'Week 3 Day 2',
   program: 'Sinatra with SQL',
   main_image: "/assets/image/butterflies/main.png",
   images: [
@@ -75,7 +75,7 @@ p3 = Project.create(
 
 p4 = Project.create(
   title: 'ALLS Watch',
-  date: 'Week3 Day3',
+  date: 'Week 3 Day 3',
   program: 'Sinatra with SQL and Active Record',
   main_image: "/assets/image/alls_watch/main.png",
   images: [
@@ -94,10 +94,11 @@ p4 = Project.create(
 
 p5 = Project.create(
   title: 'MS Finder',
-  date: 'Week4 Day1',
+  date: 'Week 4 Day 1',
   program: 'Ruby On Rails with API',
   main_image: "/assets/image/ms_finder/main.png",
   images: [
+      "/assets/image_hover/ms_finder/main.png",
       "/assets/image/ms_finder/movie_search.png",
       "/assets/image/ms_finder/quick_result.png",
       "/assets/image/ms_finder/quick_result_with_plot.png",
@@ -119,7 +120,7 @@ p5 = Project.create(
 
 p6 = Project.create(
   title: 'Book Keeper',
-  date: 'Week4 day3',
+  date: 'Week 4 day 3',
   program: 'Ruby On Rails with Database and Deployment',
   main_image: "/assets/image/book_keeper/main.png",
   images: [
@@ -131,6 +132,7 @@ p6 = Project.create(
     "/assets/image/book_keeper/author_info_with_hover.png"
     ],
   image_description: [
+    #"/assets/image_hover/book_keeper/main.png",
     "/assets/image_hover/book_keeper/books.png",
     "/assets/image_hover/book_keeper/book_info.png",
     "/assets/image_hover/book_keeper/book_info2.png",
@@ -144,7 +146,7 @@ p6 = Project.create(
 
 p7 = Project.create(
   title: 'SOLUHO Calendar',
-  date: 'Week5',
+  date: 'Week 5',
   program: 'Ruby on Rails with Enrico Public Holiday API, SQL and Lunar Calendar csv file',
   main_image: "/assets/image/soluho_calendar/main.png",
   images: [
@@ -156,6 +158,7 @@ p7 = Project.create(
     "/assets/image/soluho_calendar/int_public_holiday_list.png"
     ],
   image_description: [
+    "/assets/image_hover/soluho_calendar/main.png",
     "/assets/image_hover/soluho_calendar/user_calendar.png",
     "/assets/image_hover/soluho_calendar/user_event_list.png",
     "/assets/image_hover/soluho_calendar/user_details.png",
@@ -168,7 +171,7 @@ p7 = Project.create(
 
 p8 = Project.create(
   title: 'Fire Ball-Game Part',
-  date: 'Week8',
+  date: 'Week 8',
   program: 'Javascript, jQuery with Google translate API and Ajax',
   main_image: "/assets/image/fireball/game_main.png",
   images: [
@@ -184,6 +187,7 @@ p8 = Project.create(
       "/assets/image/fireball/index.png"
     ],
   image_description: [
+      "/assets/image_hover/fireball/game_main.png",
       "/assets/image_hover/fireball/game_lang.png",
       "/assets/image_hover/fireball/game_play.png",
       "/assets/image_hover/fireball/game_play2.png",
