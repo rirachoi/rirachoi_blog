@@ -118,7 +118,7 @@ p5 = Project.create(
   )
 
 p6 = Project.create(
-  title: 'Book Keepr',
+  title: 'Book Keeper',
   date: 'Week4 day3',
   program: 'Ruby On Rails with Database and Deployment',
   main_image: "/assets/image/book_keeper/main.png",
