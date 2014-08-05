@@ -1,31 +1,26 @@
 $(document).ready(function(){
-//////////////// show Preview imgs
-  var showProjectPreview = function() {
+
+  //show Preview imgs
+  var showProjectsImgs = function() {
     var d=300;
     $('.best_homeworks img').each(function(){
         var $this = $(this);
         var r=Math.floor(Math.random()*41)-20;
-
         $this.css({
             '-moz-transform':'rotate('+r+'deg)',
             '-webkit-transform':'rotate('+r+'deg)',
             'transform':'rotate('+r+'deg)'
             });
-
         // main_images animation
         $this.stop().animate({
             'marginTop':'-10px'
         },d+=150);
-
     });
   }; //end showProjectPreview
 
-  $('#content').hide();
-//////calling project preview
-  showProjectPreview();
 
-////////hover image preview
-imagePreview = function(){
+  //hover image preview
+  var imagePreview = function(){
     xOffset = -20;
     yOffset = 40;
 
@@ -38,9 +33,8 @@ imagePreview = function(){
             .css("top",(e.pageY - xOffset) + "px")
             .css("left",(e.pageX + yOffset) + "px")
             .fadeIn('slow')
-            .addClass('boxAnimation-target');
+            //.addClass('boxAnimation-target');
     },
-
     function(){
         this.title = this.t;
         $("#preview_img").remove();
@@ -52,29 +46,31 @@ imagePreview = function(){
             .css("top",(e.pageY - xOffset) + "px")
             .css("left",(e.pageX + yOffset) + "px");
     });
-};// end of preview image
+  };// end of preview image
 
-/////////////// main_imgs click
+
+//////////////// end of functions ////////////////
+
+
+  $('#content').hide();
+  showProjectsImgs();
+
+  //main_imgs click
   $('.best_homeworks > img').on('click', function(){
-      $('#content').show();
-//
-      var name = this.className;
+    $('#content').show();
+    var name = this.className;
+    $('#content').animate({marginTop:-100}, 1000,function(){
+      var $this = $(this);
+      $('#content div').hide();
+      $('#'+name).show();
 
-      $('#content').animate({marginTop:-100}, 1000,function(){
-        var $this = $(this);
+      imagePreview();
 
-        $('#content div').hide();
-        $('#'+name).show();
-        imagePreview();
-    ///wtf
-          // $('.images').on('mouseover', function(){
-          //   var $this = $(this);
-          //   $this.toggleClass('mainIMG');
-          // });
-
-        $this.animate({marginTop:100}, 500);
-      })
+      $this.animate({marginTop:100}, 500);
+    })
   }); //end click
+
+
 
 });//end document
 

@@ -1,17 +1,18 @@
+<div id='currentProjectId' style="display:none;">
+  <%= @project.id %>
+</div>
 
-  <h1><%= @project.title%></h1>
-  <div id='project_details'>
-    <p id="project_date">Date: <%= @project.date%></p>
-    <p id="program">Built By: <%= @project.program%></p>
-    <p id="main_img"><%= image_tag(@project.main_image, :class => 'mainIMG') %></p>
 
-    <div id='img_descriptions'>
+<div class='plain_picture' id="main">
+    <section id='project_details'>
+      <h1 id="projectTitle"><%= @project.title%></h1>
+      <p id="projectDate">( <%= @project.date %> )</p>
+      <img src=<%= @project.main_image %> id="mainImage"/>
+    </section>
+</div>
 
-      <% @project.image_description.each do |img_des|%>
-      <p id="project_date">Date: <%= @project.date%></p>
-      <p id="program">Built By: <%= @project.program%></p>
-      <p><%= image_tag(img_des, :class => 'bigIMG')%></p>
-      <% end %>
-    </div>
-
-  </div>
+<div id='description_with_images'>
+  <% @project.image_description.each do |des_img|%>
+  <%= image_tag(des_img, :class => 'des_img')%>
+  <% end %>
+</div>

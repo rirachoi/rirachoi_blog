@@ -101,7 +101,6 @@ img{
 
 }
 
-
 .images{
   width: 700px;
   margin-left: 80px;
@@ -118,3 +117,12 @@ img{
 
 }
 
+#mainImage{
+  width: 700px;
+  margin-left: 80px;
+}
+
+#description_with_images{
+  background: url(old_paper.jpg) no-repeat;
+  width: 1000px;
+}
