@@ -7,12 +7,20 @@
     <section id='project_details'>
       <h1 id="projectTitle"><%= @project.title%></h1>
       <p id="projectDate">( <%= @project.date %> )</p>
-      <img src=<%= @project.main_image %> id="mainImage"/>
+
     </section>
 </div>
 
-<div id='description_with_images'>
-  <% @project.image_description.each do |des_img|%>
-  <%= image_tag(des_img, :class => 'des_img')%>
-  <% end %>
+<div id='images_details'>
+
+  <a id="previous">
+    <%= image_tag('left.png', :id => 'left', :class=>"carousel-direction") %>
+  </a>
+
+  <a id="next">
+    <%= image_tag('right.png',:id =>'right',:class=>"carousel-direction") %>
+  </a>
+
+  <%= image_tag(@project.main_image, :id =>"mainImage")%>
+
 </div>

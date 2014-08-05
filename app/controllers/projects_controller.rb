@@ -15,6 +15,10 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find params[:id]
-    render :json => @project
+    respond_to do |format|
+    format.html {}
+      format.js{ render :json => @project }
+      format.json{ render :json => @project }
+    end
   end
 end

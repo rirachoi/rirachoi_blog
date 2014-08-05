@@ -19,7 +19,7 @@
 
 #content{
   width:824px;
-  height:900px;
+  height:1300px;
   margin:auto auto -200px auto;
   margin-left: 100px;
   background:transparent url(content_background.png) no-repeat top left;
@@ -117,12 +117,38 @@ img{
 
 }
 
-#mainImage{
-  width: 700px;
-  margin-left: 80px;
+#mainImage, .des_image{
+  width: 730px;
+  margin-left: 120px;
 }
 
-#description_with_images{
-  background: url(old_paper.jpg) no-repeat;
-  width: 1000px;
+#images_details{
+  position: relative;
+  margin: auto;
+  width: 900px;
+  overflow: hidden;
+}
+
+
+.carousel-direction {
+  position: absolute;
+  left: 710px;
+  top: 360px;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  opacity: 0.7;
+  border-radius: 100%;
+  z-index: 5;
+  text-decoration: none;
+}
+
+#right {
+  left: 780px;
 }

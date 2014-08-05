@@ -1,27 +1,5 @@
-var app = app || {};
-
 
 $(document).ready(function(){
-
-  // app.weeksView = Backbone.View.extend({
-  //   initialize: function() {
-  //     console.log('you are appView page');
-  //   },
-
-  //   render: function() {
-
-  //   }
-
-  // })// end of weeksView
-
-  // app.Week = Backbone.Model.extend({
-
-  // }) // end of week Model
-
-  // app.Weeks = Backbone.Collection.extend({
-  //   url: '/weeks',
-  //   model: app.Week
-  // })// end of weeks collection
 
 
   var createBoxes = function(){
