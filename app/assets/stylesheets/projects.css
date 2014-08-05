@@ -114,7 +114,7 @@ img{
   width: 550px;
   height: 300px;
   margin-top: -70px;
-
+  border: 20px solid rgba(0, 0, 0, .3);
 }
 
 #mainImage, .des_image{
@@ -129,6 +129,8 @@ img{
   overflow: hidden;
 }
 
+
+/* image slider */
 
 .carousel-direction {
   position: absolute;
