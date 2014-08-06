@@ -8,6 +8,7 @@ $(document).ready(function(){
 
   }
 
+
   $.ajax({
     url: '/weeks',
     dataType: 'json'
@@ -25,18 +26,20 @@ $(document).ready(function(){
 
 
     $('.weekContainer').on('click', function(event){
-      var $weekId = $(event.target).text();
+      if (! $currentWeekId) {
+        return;
+      }
+      var $weekId = $(this).find('p.currentWeekId').text();
       console.log($weekId);
       $.ajax({
-        url: '/prjects/'+ $weekId,
+        url: '/weeks/'+ $weekId,
         dataType: 'json'
       }).done(function(r){
         console.log(r);
-        console.log(r.title);
-        console.log(r.proejcts);
+        //console.log(r.proejcts);
       });
 
-     console.log('why why why why');
+     //console.log('why why why why');
   });
 
   });

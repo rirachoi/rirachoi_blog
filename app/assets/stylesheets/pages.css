@@ -4,22 +4,32 @@ body{
   font-family: 'Indie Flower', fantasy;
   max-width: 960px;
   text-align: center;
+/*  background: url(old_paper.jpg);*/
+  background-color: rgba(103, 67, 20, 0.5);
+  text-align: center;
+  background-size: 100%;
+  width: 100%;
+  height:500%;
 }
 
 .bg{
   background: url(notebook-background.png) repeat;
   position: fixed;
   background-size: 100%;
-  width: 100%;
+  width: 90%;
   height: 400%;
   top:0;
-  left:0;
+  left:5%;
+  right:5%;
   z-index: -1;
 }
 
 #container{
   margin: 110px 110px 0 110px;
+
 }
+
+
 
 h1{
   margin-left: 200px;

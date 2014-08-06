@@ -4,6 +4,10 @@ $(document).ready(function(){
 
 
   var $currentProjectId = $('#currentProjectId').text();
+  if (! $currentProjectId) {
+    return;
+  }
+
   $.ajax({
     url:'/projects/' + $currentProjectId,
     dataType: 'json'
