@@ -36,7 +36,7 @@ $(document).ready(function(){
         dataType: 'json'
       }).done(function(r){
         console.log(r);
-        //console.log(r.proejcts);
+
       });
 
      //console.log('why why why why');

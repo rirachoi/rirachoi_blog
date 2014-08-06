@@ -13,7 +13,7 @@ $(document).ready(function(){
             });
         // main_images animation
         $this.stop().animate({
-            'marginTop':'-10px'
+            'marginTop':'5%'
         },d+=150);
     });
   }; //end showProjectPreview

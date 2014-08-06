@@ -4,7 +4,6 @@
   width: 150px;
   height: 100px;
   margin: auto;
-  border-radius: 10px;
 }
 
 .small_images {
@@ -13,22 +12,21 @@
 
 .best_homeworks{
   width: 750px;
-  margin: auto;
+  margin: auto 10% auto 13%;
 }
 
 #content{
   width:824px;
   height:1300px;
-  margin:auto auto -200px auto;
+  margin:auto auto -200px 8%;
   background:transparent url(content_background.png) no-repeat top left;
   text-align: center;
 }
 
 #content img {
-  width: 300px;
+  width: 400px;
   height: 250px;
   margin-top: 50px;
-  border-radius: 10px;
 }
 
 #content .small_images{
@@ -68,35 +66,22 @@
 }
 
 img{
-  border-radius: 10px;
+  border-radius: 0.3em;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
 }
 
 .preview{
-      position:absolute;
-      border:3px solid #ccc;
-      background:#333;
-      padding:5px;
-      display:none;
-      color:#fff;
-      box-shadow: 4px 4px 3px rgba(103, 115, 130, 1);
+  position:absolute;
+  border:3px solid #ccc;
+  background:#333;
+  padding:5px;
+  display:none;
+  color:#fff;
+  box-shadow: 4px 4px 3px rgba(103, 115, 130, 1);
 }
 
-#content > #checkOut{
-  font-family: Source Sans Pro;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  line-height: 3.5em;
-  padding: 0 1.5em;
-  background: gold;
-  box-shadow: inset 0 -.125rem rgba(0,0,0,.2);
-  color: black;
-  border-radius: 5em;
-  cursor: pointer;
-  user-select: none;
-  transform-origin: 100% 100%;
-
-}
 
 .images{
   width: 700px;
@@ -111,44 +96,20 @@ img{
   width: 550px;
   height: 300px;
   margin-top: -70px;
-  border: 20px solid rgba(0, 0, 0, .5);
+  border: 8px solid rgba(0, 0, 0, .7);
+}
+
+#preview_img {
+  font-size: 20px;
 }
 
 #mainImage, .des_image{
-  width: 730px;
-/*  margin-left: 120px;*/
+  width: 700px;
 }
 
 #images_details{
   position: relative;
-  margin: auto;
+  margin: auto 5% auto 5%;
   width: 900px;
   overflow: hidden;
 }
-
-
-/* image slider */
-/*
-.carousel-direction {
-  position: absolute;
-  left: 710px;
-  top: 360px;
-  width: 40px;
-  height: 40px;
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 30px;
-  text-align: center;
-  background: #222222;
-  border: 3px solid #ffffff;
-  opacity: 0.7;
-  border-radius: 100%;
-  z-index: 5;
-  text-decoration: none;
-}
-
-#right {
-  left: 780px;
-}
-*/

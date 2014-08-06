@@ -170,7 +170,7 @@ p7 = Project.create(
 
 
 p8 = Project.create(
-  title: 'Fire Ball-Game Part',
+  title: 'FireBall - Game Part',
   date: 'Week 8',
   program: 'Javascript, jQuery with Google translate API and Ajax',
   main_image: "/assets/image/fireball/game_main.png",

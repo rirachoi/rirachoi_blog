@@ -13,7 +13,8 @@
 }
 
 .weeks{
-margin: auto;
+  margin: auto 10% 10% 10%;
+  width: 800px;
 }
 
 .weekNum{

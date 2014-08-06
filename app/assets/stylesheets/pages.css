@@ -4,8 +4,8 @@ body{
   font-family: 'Indie Flower', fantasy;
   max-width: 960px;
   text-align: center;
-/*  background: url(old_paper.jpg);*/
-  background-color: rgba(103, 67, 20, 0.5);
+  background: url(simple_wood.jpg);
+/*  background-color: rgba(0, 0, 0, 0.);*/
   text-align: center;
   background-size: 100%;
   width: 100%;
@@ -13,9 +13,9 @@ body{
   margin: auto;
 }
 
-.bg{
-/*  background: url(notebook-background.png) repeat;
-*/position: fixed;
+/*.bg{
+  background: url(simple_wood.jpg);
+  position: fixed;
   background-size: 100%;
   width: 90%;
   height: 400%;
@@ -25,17 +25,36 @@ body{
   z-index: -1;
   margin: auto;
 }
-
+*/
 #container{
   margin: auto;
-  width: 750px;
+  width: 900px;
+  background: url(spring_notebook.png) no-repeat;
+  background-size: 100% 100%;
+  height: 800px;
+  margin-left: 2%;
 }
-
 
 
 h1{
   font-size: 48px;
-  margin: 20% 0 10% 0;
+}
+
+#header_green{
+  background: url(header_green.png) no-repeat;
+  background-size: 103% 109%;
+}
+
+#header_yellow{
+  background: url(header_yellow.png) no-repeat;
+  background-size: 104% 114%;
+}
+
+
+#blank{
+  height:5%;
+  margin-top: 15%;
+
 }
 
 #wdi_title{

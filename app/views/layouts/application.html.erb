@@ -13,12 +13,13 @@
       <li class="about"><%= link_to("About",pages_about_path)%></li>
       <li class="project"><%= link_to("Projects", projects_path)%></li>
       <li class="wdi"><%= link_to("WDI", weeks_path)%></li>
-      <li class="Contact"><%= link_to("Contact",'/')%></li>
+      <li class="Contact"><%= link_to("Contact",pages_contact_path)%></li>
     </ul>
 
 
     <div class='bg'></div>
     <div id='container'>
+      <div id='blank'></div>
       <%= yield %>
     </div>
 

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :pages, :only => [:index]
   get 'pages/about' => 'pages#about'
+  get 'pages/contact' => 'pages#contact'
   resources :weeks
   resources :days
   resources :projects
