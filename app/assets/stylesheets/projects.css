@@ -3,7 +3,7 @@
 .best_homeworks img{
   width: 150px;
   height: 100px;
-  margin: 10px;
+  margin: auto;
   border-radius: 10px;
 }
 
@@ -12,16 +12,14 @@
 }
 
 .best_homeworks{
-  width: 850px;
-  margin-left: 10%;
-  margin-top: 13%;
+  width: 750px;
+  margin: auto;
 }
 
 #content{
   width:824px;
   height:1300px;
   margin:auto auto -200px auto;
-  margin-left: 100px;
   background:transparent url(content_background.png) no-repeat top left;
   text-align: center;
 }
@@ -36,7 +34,7 @@
 #content .small_images{
   width: 150px;
   height: 100px;
-  margin: 5px;
+  margin: auto;
   border-radius: 5px;
 }
 
@@ -58,8 +56,8 @@
 .mainIMG{
   width: 700px;
   margin: 100px;
-  margin-bottom: 150px;
-  margin-left: 150px;
+/*  margin-bottom: 150px;
+  margin-left: 150px;*/
 }
 
 .bigIMG{
@@ -68,7 +66,6 @@
   margin: 150px;
   margin-top: 240px;
 }
-
 
 img{
   border-radius: 10px;
@@ -119,7 +116,7 @@ img{
 
 #mainImage, .des_image{
   width: 730px;
-  margin-left: 120px;
+/*  margin-left: 120px;*/
 }
 
 #images_details{
@@ -131,7 +128,7 @@ img{
 
 
 /* image slider */
-
+/*
 .carousel-direction {
   position: absolute;
   left: 710px;
@@ -154,3 +151,4 @@ img{
 #right {
   left: 780px;
 }
+*/

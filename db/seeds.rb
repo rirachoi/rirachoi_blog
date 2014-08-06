@@ -3,16 +3,16 @@ Day.destroy_all
 Homework.destroy_all
 Project.destroy_all
 
-w1 = Week.create(:name => 'Week 1', :study => ['Commandline','Ruby','Debugging','Git'])
-w2 = Week.create(:name => 'Week 2', :study => ['HTML','CSS','Sinatra','API'])
-w3 = Week.create(:name => 'Week 3', :study => ['Sinatra with SQL', 'Active Record'])
-w4 = Week.create(:name => 'Week 4', :study => ['Ruby on Rails', 'Deployment'])
+w1 = Week.create(:name => 'Week 1', :study => ['Command line','Ruby','Debugging','Git'])
+w2 = Week.create(:name => 'Week 2', :study => ['HTML','CSS','Sinatra','APIs'])
+w3 = Week.create(:name => 'Week 3', :study => ['Sinatra MVC' 'SQL', 'ActiveRecord'])
+w4 = Week.create(:name => 'Week 4', :study => ['Rails MVC', 'Deployment'])
 w5 = Week.create(:name => 'Week 5', :study => ['First Project'])
 w6 = Week.create(:name => 'Week 6', :study => ['Javascript'])
-w7 = Week.create(:name => 'Week 7', :study => ['jQuery'])
-w8 = Week.create(:name => 'Week 8', :study => ['Second Project'])
-w9 = Week.create(:name => 'Week 9', :study => ['Backbone', 'Test.rb'])
-w10 = Week.create(:name => 'Week 10', :study => [])
+w7 = Week.create(:name => 'Week 7', :study => ['Javascript Frame Work', 'jQuery'])
+w8 = Week.create(:name => 'Week 8', :study => ['Second Project - Group'])
+w9 = Week.create(:name => 'Week 9', :study => ['Backbone', 'TDD', 'Minitest'])
+w10 = Week.create(:name => 'Week 10', :study => ['Aspect'])
 w11 = Week.create(:name => 'Week 11', :study => [])
 w12 = Week.create(:name => 'Week 12', :study => ['Last Project'])
 
