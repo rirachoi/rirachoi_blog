@@ -4,7 +4,7 @@
 
   <% @projects.each do |project| %>
     <% class_name = project.title.gsub(/ /,"") %>
-    <%= image_tag(project.main_image, :class => class_name) %>
+    <%= image_tag(project.main_image, :class => class_name, :title => 'Click Me') %>
   <% end %>
 
 </div>
@@ -29,7 +29,7 @@
 
       <%= link_to"<button id='btn_description'>Description</button>".html_safe, project_path(:id => project.id), :title => "Click Me!", :method => :get %>
 
-  <!--small images -->
+  <!--small images for preview -->
       <section id="<%= class_name %>" class='images'>
         <% project.images.each do |image| %>
           <%= link_to(image_tag(image, :class => "small_images"), image, :title => project.title, :id=>'preview') %>

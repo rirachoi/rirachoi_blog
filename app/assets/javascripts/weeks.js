@@ -39,7 +39,6 @@ $(document).ready(function(){
 
       });
 
-     //console.log('why why why why');
   });
 
   });

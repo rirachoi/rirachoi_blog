@@ -74,6 +74,7 @@ $(document).ready(function(){
     $('.images').fadeIn('slow');
 
     imagePreview();
+
   }); //end of main image click
 
 

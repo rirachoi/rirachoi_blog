@@ -58,13 +58,6 @@
   margin-left: 150px;*/
 }
 
-.bigIMG{
-  width: 700px;
-  height: 600px;
-  margin: 150px;
-  margin-top: 240px;
-}
-
 img{
   border-radius: 0.3em;
     -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -94,10 +87,6 @@ img{
   margin: auto 3% 3% 8%;
 }
 
-*{
-  text-decoration: none;
-}
-
 #preview_img img{
   width: 550px;
   height: 300px;
@@ -109,7 +98,7 @@ img{
   font-size: 20px;
 }
 
-#mainImage, .des_image{
+#show_main_image, .des_image{
   width: 700px;
 }
 
@@ -120,8 +109,5 @@ img{
   overflow: hidden;
 }
 
-
-
-/* show page - image rotations */
 
 

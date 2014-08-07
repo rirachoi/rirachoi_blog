@@ -2,20 +2,14 @@
   <%= @project.id %>
 </div>
 
-
-<div class='plain_picture' id="main">
-    <section id='project_details'>
-      <h1 id="projectTitle"><%= @project.title%></h1>
-      <p id="projectDate"><%= @project.program %> ( <%= @project.date %> )</p>
-
-
-    </section>
+<div class='project_info' id="main">
+  <section id='project_details'>
+    <h1 id="projectTitle"><%= @project.title%></h1>
+    <p id="projectDate"><%= @project.program %> ( <%= @project.date %> )</p>
+  </section>
 </div>
 
-
-
 <div id='images_details'>
-
-  <%= image_tag(@project.main_image, :id =>"mainImage")%>
+  <%= image_tag(@project.main_image, :class =>"show_main_image")%>
 
 </div>
