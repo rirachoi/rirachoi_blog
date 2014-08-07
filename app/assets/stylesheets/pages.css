@@ -1,11 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
 
 body{
   font-family: 'Indie Flower', fantasy;
   max-width: 960px;
   text-align: center;
   background: url(simple_wood.jpg);
-/*  background-color: rgba(0, 0, 0, 0.);*/
+  /*  background-color: rgba(0, 0, 0, 0.);*/
   text-align: center;
   background-size: 100%;
   width: 100%;
@@ -36,8 +41,20 @@ body{
 }
 
 
-h1{
+h1 {
   font-size: 48px;
+}
+
+p{
+  font-family: 'Special Elite', fantasy;
+  font-size: 25px;
+  color: rgba(0,0,0,.6);
+}
+
+h2 {
+  font-family: 'Special Elite', fantasy;
+  font-size: 50px;
+  color: rgba(0,0,0,.6);
 }
 
 #header_green{
@@ -50,12 +67,65 @@ h1{
   background-size: 104% 114%;
 }
 
+#header_pink{
+  background: url(header_pink.png) no-repeat;
+  background-size: 104% 114%;
+}
+
+#header_purple{
+  background: url(header_puple.png) no-repeat;
+  background-size: 104% 114%;
+  font-family: 'Indie Flower', fantasy;
+}
+
+#btn_description, .btn_preview{
+  height: 140px;
+  width: 140px;
+  line-height: 4.5em;
+  outline: none;
+  background: rgb(201, 35, 19);
+  box-shadow: inset 0 -.125rem rgba(0,0,0,.2);
+  border-radius: 100% 100% 0 100%;
+  cursor: pointer;
+  transform-origin: 100% 100%;
+  margin-bottom: 3%;
+  text-shadow: 3px 3px 5px rgb(0,0,0);
+/*  display: inline-block;*/
+}
+
+#middle{
+  width: 140px;
+  border-radius: 100%;
+  box-shadow: inset 0 -.125rem rgba(0,0,0,.2);
+/*  background: url(content_nav-3.jpg) no-repeat;
+  background-size: 100% 100%;*/
+}
+
+#btn_description, .btn_preview, #middle{
+  display: inline-block;
+}
+
+
+.btn_preview{
+  border-radius: 100% 100% 100% 0;
+}
+
+#btn_description, .btn_preview a{
+  color: white;
+  font-size: 20px;
+  font-family: 'Montserrat Alternates';
+}
+
+#btn_description:hover, .btn_preview:hover {
+  background-color: #8D1919;
+}
 
 #blank{
   height:5%;
   margin-top: 15%;
 
 }
+
 
 #wdi_title{
   font-size: 35px;
@@ -95,4 +165,5 @@ ul#navigation li a {
     margin-top: -40px;
     cursor: pointer;
 }
+
 

@@ -98,7 +98,7 @@ p5 = Project.create(
   program: 'Ruby On Rails with API',
   main_image: "/assets/image/ms_finder/main.png",
   images: [
-      "/assets/image_hover/ms_finder/main.png",
+      "/assets/image/ms_finder/main.png",
       "/assets/image/ms_finder/movie_search.png",
       "/assets/image/ms_finder/quick_result.png",
       "/assets/image/ms_finder/quick_result_with_plot.png",

@@ -70,6 +70,12 @@ img{
     -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
           box-shadow: 0 10px 6px -6px #777;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+#content img:hover{
+  transform: scale(1.2,1.2);
 }
 
 .preview{
@@ -85,7 +91,7 @@ img{
 
 .images{
   width: 700px;
-  margin-left: 80px;
+  margin: auto 3% 3% 8%;
 }
 
 *{
@@ -95,7 +101,7 @@ img{
 #preview_img img{
   width: 550px;
   height: 300px;
-  margin-top: -70px;
+  margin-top: -0.5%;
   border: 8px solid rgba(0, 0, 0, .7);
 }
 
@@ -113,3 +119,9 @@ img{
   width: 900px;
   overflow: hidden;
 }
+
+
+
+/* show page - image rotations */
+
+

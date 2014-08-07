@@ -20,9 +20,14 @@
   <!--projects detains -->
       <h2 class="project_name"><%= project.title %></h2>
 
-      <p>Date: <%= project.date %></p>
-      <p>Built By: <%= project.program %></p>
-      <h3 id='checkOut'><%= link_to('Check it out with image descriptions', project_path(:id => project.id))%></h3>
+      <p>( <%= project.date %> )</p>
+
+      <button class="btn_preview" method='get'><a title='Click Me!')>Preview</a></button>
+
+      <section id='middle'></section>
+
+
+      <%= link_to"<button id='btn_description'>Description</button>".html_safe, project_path(:id => project.id), :title => "Click Me!", :method => :get %>
 
   <!--small images -->
       <section id="<%= class_name %>" class='images'>

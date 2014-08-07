@@ -58,18 +58,23 @@ $(document).ready(function(){
   //main_imgs click
   $('.best_homeworks > img').on('click', function(){
     $('#content').show();
+
     var name = this.className;
     $('#content').animate({marginTop:-100}, 1000,function(){
       var $this = $(this);
       $('#content div').hide();
       $('#'+name).show();
-
-      imagePreview();
+      $('.images').hide();
 
       $this.animate({marginTop:100}, 500);
     })
-  }); //end click
+  }); //end main image click
 
+  $('.btn_preview').on('click', function(){
+    $('.images').fadeIn('slow');
+
+    imagePreview();
+  }); //end of main image click
 
 
 });//end document
