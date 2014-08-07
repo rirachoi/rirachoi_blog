@@ -14,8 +14,11 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require lib/underscore
-//= require lib/backbone
-//= require lib/parallax
+//= require lib/modernizr.custom.46884
+//= require lib/jquery.slicebox
+//= require lib/animations
+//= require lib/animations.min
+//= require lib/appear.min
 //= require_tree .
 
 $(document).ready(function(){

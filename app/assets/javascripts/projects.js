@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 //////////////// end of functions ////////////////
 
-
+//
   $('#content').hide();
   showProjectsImgs();
 
@@ -60,13 +60,19 @@ $(document).ready(function(){
     $('#content').show();
 
     var name = this.className;
-    $('#content').animate({marginTop:-100}, 1000,function(){
+    $('#content').animate({marginTop:-100}, 1000, function(){
       var $this = $(this);
       $('#content div').hide();
       $('#'+name).show();
       $('.images').hide();
 
       $this.animate({marginTop:100}, 500);
+
+      var $contentHeight = $('#content').height();
+      $("html, body").animate({ scrollTop: $contentHeight / 2 }, 'slow');
+
+      $('#content .btn_preview').fadeIn('slow');
+      $('#content .btn_description').fadeIn('slow');
     })
   }); //end main image click
 

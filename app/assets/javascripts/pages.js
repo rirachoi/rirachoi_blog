@@ -1,5 +1,6 @@
-/// navigation js
+
 $(document).ready(function(){
+/// navigation js
   $(function() {
     var d=300;
     $('#navigation a').each(function(){
@@ -29,5 +30,15 @@ $(document).ready(function(){
             },200);
         }
      )
+    });
+
+  /// contact js
+
+    // $('#container').css({'background':'none'});
+    $('.faceImg').hide();
+
+    $('#check').on('click', function(){
+        $('.faceImg').fadeIn('slow').css({'box-shadow':'none'});
+        // $('#der').css({'top': 310+'px'})
     });
 });

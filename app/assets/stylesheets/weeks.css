@@ -2,13 +2,21 @@
   border-radius: 100%;
   color: white;
   background-color: green;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   text-align: center;
   display: inline-block;
   font-size: 1.3em;
   margin: 4%;
+  cursor: pointer;
+  box-shadow: inset 0 -.125rem rgba(0,0,0,.4);
  /* box-shadow: 0 0 0.5em black;*/
+}
+
+.weekContainer p {
+  font-family: 'Indie Flower', fantasy;
+  text-shadow: 3px 3px 5px rgb(0,0,0);
+  color: white;
 
 }
 
@@ -20,10 +28,14 @@
 .weekNum{
   font-size: 40px;
   color: yellow;
+  font-family: 'Indie Flower', fantasy;
 }
 
 .weekContainer:hover{
   background-color: #005200;
+}
+
+.weekContainer:hover p{
   color: yellow;
 }
 

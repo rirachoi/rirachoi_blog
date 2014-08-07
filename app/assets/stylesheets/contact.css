@@ -1,0 +1,93 @@
+/*html, body {
+  height: 100%;
+  overflow: hidden;
+}*/
+
+#contact_body {
+  height: 100%;
+  overflow: hidden;
+  font: 75% "Helvetica", Arial, sans-serif;
+}
+
+input[type="checkbox"] {
+  background: rgba(255,255,255,.1);
+  border-radius: 100%;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  appearance: none;
+  outline:0;
+  transition: all 0.4s ease-in-out;
+  z-index: 10;
+}
+
+input[type="checkbox"]:hover {
+  background: rgba(180,0,0,1);
+}
+
+input[type="checkbox"]:after {
+  color: #fff;
+  content: '+';
+  font-size: 2em;
+  line-height: 41px;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="checkbox"]:checked {
+  background: rgba(180,0,0,1);
+  transform: rotateZ(405deg);
+}
+
+input[type="checkbox"]:checked ~ #izq {
+  transform: translateX(-50%);
+}
+
+input[type="checkbox"]:checked ~ #der {
+  transform: translateX(50%);
+}
+
+/* modifique transition: "all" por "transform" // creditos Fork: http://codepen.io/bfeelyweb/details/AuJaz#forkline de  Bennett Feely */
+
+#izq, #der {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  transition: transform ease-in-out .4s;
+  width:  465px;
+  height: 730px;
+  z-index: 5;
+  top: 20%;
+}
+
+#izq {
+  background: url(contact_notebook_left.png) no-repeat top right;
+  background-size: 100% 100%;
+}
+
+#der {
+  background: url(contact_notebook_right.png) no-repeat left top;
+  left:50%;
+  background-size: 100% 100%
+}
+
+#contact_body p, a{
+  font-size: 15px;
+  color: rgba(0,0,0,0.6);
+}
+
+#contact_body h3{
+  font-size: 20px;
+  font-family: 'Special Elite', fantasy;
+   color: rgba(0,0,0,0.6);
+}
+
+.faceImg{
+  width:325px;
+  height: 250px;
+}
