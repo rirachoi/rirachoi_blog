@@ -95,11 +95,21 @@ h2 {
   text-shadow: 3px 3px 5px rgb(0,0,0);
 }
 
-#middle{
-  width: 140px;
+.btn_top{
+  height: 130px;
+  width: 124px;
+  line-height: 4.5em;
+  outline: none;
+  background: rgb(201, 35, 19);
+  box-shadow: inset 0 -.125rem rgba(0,0,0,.2);
+  border-radius: 34%;
+  cursor: pointer;
+  transform-origin: 100% 100%;
+  margin: 3%;
+  text-shadow: 3px 3px 5px rgb(0,0,0);
 }
 
-.btn_description, .btn_preview, #middle{
+.btn_description, .btn_preview, .btn_top{
   display: inline-block;
 }
 
@@ -107,13 +117,13 @@ h2 {
   border-radius: 100% 100% 100% 0;
 }
 
-.btn_description, .btn_preview a{
+.btn_description, .btn_preview a, .btn_top{
   color: white;
   font-size: 20px;
   font-family: 'Montserrat Alternates', arial;
 }
 
-.btn_description:hover, .btn_preview:hover {
+.btn_description:hover, .btn_preview:hover, .btn_top:hover {
   background-color: #8D1919;
 }
 
