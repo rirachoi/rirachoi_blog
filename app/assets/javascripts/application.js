@@ -14,12 +14,14 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require lib/underscore
-//= require lib/modernizr.custom.46884
-//= require lib/jquery.slicebox
-//= require lib/animations
-//= require lib/animations.min
-//= require lib/appear.min
-//= require_tree .
+//= require modernizr.custom.46884
+//= require jquery.slicebox
+//= require project.js
+//= require pages.js
+//= require weeks.js
+//= require projects.js
+
+
 
 $(document).ready(function(){
 

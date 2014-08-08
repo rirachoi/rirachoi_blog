@@ -6,55 +6,55 @@ $(document).ready(function(){
     return;
   }
 
-  // var imageSliceShow = function() {
+  var imageSliceShow = function() {
 
-  //     var Page = (function() {
+      var Page = (function() {
 
-  //       var $navArrows = $( '#nav-arrows' ).hide(),
-  //         $shadow = $( '#shadow' ).hide(),
-  //         slicebox = $( '#sb-slider' ).slicebox( {
-  //           onReady : function() {
+        var $navArrows = $( '#nav-arrows' ).hide(),
+          $shadow = $( '#shadow' ).hide(),
+          slicebox = $( '#sb-slider' ).slicebox( {
+            onReady : function() {
 
-  //             $navArrows.show();
-  //             $shadow.show();
+              $navArrows.show();
+              $shadow.show();
 
-  //           },
-  //           orientation : 'r',
-  //           cuboidsRandom : true,
-  //           disperseFactor : 30
-  //         } ),
+            },
+            orientation : 'r',
+            cuboidsRandom : true,
+            disperseFactor : 30
+          } ),
 
-  //         init = function() {
+          init = function() {
 
-  //           initEvents();
+            initEvents();
 
-  //         },
-  //         initEvents = function() {
+          },
+          initEvents = function() {
 
-  //           // add navigation events
-  //           $navArrows.children( ':first' ).on( 'click', function() {
+            // add navigation events
+            $navArrows.children( ':first' ).on( 'click', function() {
 
-  //             slicebox.next();
-  //             return false;
+              slicebox.next();
+              return false;
 
-  //           } );
+            } );
 
-  //           $navArrows.children( ':last' ).on( 'click', function() {
+            $navArrows.children( ':last' ).on( 'click', function() {
 
-  //             slicebox.previous();
-  //             return false;
+              slicebox.previous();
+              return false;
 
-  //           } );
+            } );
 
-  //         };
+          };
 
-  //         return { init : init };
+          return { init : init };
 
-  //     })();
+      })();
 
-  //     Page.init();
+      Page.init();
 
-  //   };
+    };
 
   $.ajax({
     url:'/projects/' + $currentProjectId,
@@ -67,8 +67,8 @@ $(document).ready(function(){
     //   $img.attr('src', $des_image[g]).css({'height':$currentWindowHeight+'px;'});
     //   $('#images_details').append($img);
     // }
-    $('#container').hide();
-    // imageSliceShow();
+    $('#container').css({'background':'none'});
+    imageSliceShow();
 
 
   });
