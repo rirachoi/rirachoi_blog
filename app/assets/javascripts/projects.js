@@ -77,6 +77,7 @@ $(document).ready(function(){
   }); //end main image click
 
   $('.btn_preview').on('click', function(){
+    $("html, body").animate({ scrollTop: ($('#content').height())-100 }, 'slow');
     $('.images').fadeIn('slow');
 
     imagePreview();

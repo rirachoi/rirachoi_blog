@@ -8,11 +8,14 @@
     <div class="contact_info">
     <%= image_tag('anytime.png', :class => 'faceImg') %>
     <h3>   Here is my number, Call Me Maybe!! </h3>
-    <p>Mobile: +61 431 062 689</p>
-    <p>Address: Sydney NSW </p>
-    <p>Email: rira.nunu.choi@gmail.com </p>
-    <p><%= link_to 'Github', 'https://github.com/rirachoi' %></p>
-    <p> Linkin </p>
+    <p id="mobile"><span class="my_info">+61 431 062 689</span></p>
+    <p><span class="my_info">Sydney NSW </span></p>
+
+    <div id="myinfo_icon">
+      <%= link_to(image_tag('gmail.png', :title =>'Gmail'), "rira.nunu.choi@gmail.com", :class => 'my_info') %>
+      <%= link_to(image_tag('github.png', :title=>'Github', :id => 'github'), 'https://github.com/rirachoi') %>
+      <%= link_to(image_tag('linkedin.png', :title=>'Linkedin'), 'https://github.com/rirachoi', :class => 'my_info') %>
+    </div>
 
   <div/>
 </div>

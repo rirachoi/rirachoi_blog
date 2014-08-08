@@ -87,8 +87,28 @@ input[type="checkbox"]:checked ~ #der {
   font-family: 'Special Elite', fantasy;
    color: rgba(0,0,0,0.6);
 }
+#mobile{
+  margin-bottom: 5%;
+}
 
 .faceImg{
   width:325px;
   height: 250px;
+}
+
+.my_info{
+  font-size: 18px;
+}
+
+#myinfo_icon img{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  box-shadow: none;
+  margin: 0.5%;
+}
+
+#github{
+  height:100px;
+
 }
