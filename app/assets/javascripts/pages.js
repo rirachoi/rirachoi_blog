@@ -32,13 +32,13 @@ $(document).ready(function(){
      )
     });
 
+  var openDoor = function() {
+     $('#check').attr('checked', true);
+     $('.contact_info').fadeIn(2000);
+  }
   /// contact js
 
-    // $('#container').css({'background':'none'});
-    $('.faceImg').hide();
+ var openTimer = setTimeout(openDoor, 1000);
+ $('.faceImg').css({'box-shadow':'none'});
 
-    $('#check').on('click', function(){
-        $('.faceImg').fadeIn('slow').css({'box-shadow':'none'});
-        // $('#der').css({'top': 310+'px'})
-    });
 });

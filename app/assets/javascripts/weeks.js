@@ -1,13 +1,5 @@
 
-
-
 $(document).ready(function(){
-
-  var showWeekDetails = function(){
-    console.log('show the project '+ $(event.target).text());
-
-  }
-
 
   $.ajax({
     url: '/weeks',
@@ -19,34 +11,29 @@ $(document).ready(function(){
       var $idP = $('<p class="currentWeekId" style="display:none;">'+response[i].id+'</p>');
       $currentWeekId = $idP.text();
       var $weekLetter = $('<p class="weekLetter">Week <span class="weekNum">'+ (i+1) +'</span></p>');
-      $shadow = $('<div class="shadow/>');
-      $weekContainer.append($weekLetter).append($idP).append($shadow);
+      $weekContainer.append($weekLetter).append($idP);
       $('.weeks').append($weekContainer);
+      $('.week_details').hide();
     }
 
 
-    $('.weekContainer').on('click', function(event){
-      if (! $currentWeekId) {
-        return;
-      }
-      var $weekId = $(this).find('p.currentWeekId').text();
-      console.log($weekId);
-      $.ajax({
-        url: '/weeks/'+ $weekId,
-        dataType: 'json'
-      }).done(function(r){
-        console.log(r);
+    $('.weeks > div').on('click', function(event){
+      $('.week_details').show();
 
-      });
+      var week_num = $(this).find('span.weekNum').text();
+        $('.week_details').animate({marginTop:-100}, 1000, function(){
+          $('.week_details div').hide();
+          $('#Week'+week_num).show();
+          $this = $(this)
+          $this.animate({marginTop:100}, 500);
+        }); // end of week_details animation
 
-  });
+      }); //end of click weekContaine
 
-  });
+  }); //end of weeks ajax
 
 
 /////////// after click the week container /////////
-
-
 
 
 

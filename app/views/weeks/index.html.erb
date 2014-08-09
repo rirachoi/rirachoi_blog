@@ -2,9 +2,22 @@
 
 
   <div class="weeks">
-  <!--   <div class='projects'>
-    </div> -->
+
   </div>
 
-  <div class="week_details"></div>
+  <div class="week_details">
+    <% @weeks.each do |week| %>
+      <% week_class_name = week.name.gsub(/ /, "")%>
+      <div id="<%=week_class_name %>" class="text">
+        <h2 class="week_name"><%= week.name %></h2>
+
+        <ul>
+          <% week.study.each do |s| %>
+            <li class="what_i_learnt"><%= s %></li>
+          <% end %>
+        </ul>
+
+      </div>
+    <% end %>
+  </div>
 

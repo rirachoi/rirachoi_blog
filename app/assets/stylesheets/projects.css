@@ -15,7 +15,7 @@
   margin: auto 10% auto 13%;
 }
 
-#content{
+#content, .week_details{
   width:824px;
   height:1300px;
   margin:auto auto -200px 8%;

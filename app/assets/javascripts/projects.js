@@ -56,7 +56,7 @@ $(document).ready(function(){
   showProjectsImgs();
 
   //main_imgs click
-  $('.best_homeworks > img').on('click', function(){
+  $('.best_homeworks > img').on('click', function(eve){
     $('#content').show();
 
     var name = this.className;
