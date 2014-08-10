@@ -15,7 +15,7 @@
   margin: auto 10% auto 13%;
 }
 
-#content, .week_details{
+#content{
   width:824px;
   height:1300px;
   margin:auto auto -200px 8%;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-#content img {
+.preview_mainImg{
   width: 400px;
   height: 250px;
   margin-top: 50px;
@@ -111,5 +111,31 @@ img{
   margin: auto 5% auto 5%;
   width: 900px;
   overflow: hidden;
+}
+
+.btn_description, .btn_preview, .btn_top{
+  display: inline-block;
+}
+
+.description_icon, .preview_icon, .top_icon{
+  background: url(round_nav.png)no-repeat;
+  background-size: 100%, 100%;
+  width: 170px;
+  height: 150px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+.description_icon img, .preview_icon img, .top_icon img{
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+  margin-top: 25px;
+}
+
+.arrow_top{
+  box-shadow: none;
 }
 

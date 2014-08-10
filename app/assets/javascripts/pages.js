@@ -41,4 +41,12 @@ $(document).ready(function(){
  var openTimer = setTimeout(openDoor, 1000);
  $('.faceImg').css({'box-shadow':'none'});
 
+ $('#github').on('mouseover', function(){
+  $('#github').attr('src', '/assets/github_icon.png');
+ });
+
+  $('#github').on('mouseleave', function(){
+    $('#github').attr('src', '/assets/github.png');
+ });
+
 });

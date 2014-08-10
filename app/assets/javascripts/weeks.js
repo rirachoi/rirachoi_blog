@@ -21,11 +21,11 @@ $(document).ready(function(){
       $('.week_details').show();
 
       var week_num = $(this).find('span.weekNum').text();
-        $('.week_details').animate({marginTop:-100}, 1000, function(){
+        $('.week_details').animate({marginRight:-100}, 1000, function(){
           $('.week_details div').hide();
           $('#Week'+week_num).show();
           $this = $(this)
-          $this.animate({marginTop:100}, 500);
+          $this.animate({marginRigth:100}, 500);
         }); // end of week_details animation
 
       }); //end of click weekContaine

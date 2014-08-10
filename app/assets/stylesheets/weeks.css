@@ -43,7 +43,17 @@
   color: white;
 }
 
+.week_details{
+  width:500px;
+  height:800px;
+  margin:auto auto -200px 8%;
+  background:transparent url(content_background.png) no-repeat top left;
+  text-align: center;
+}
 
+.week_details, .weeks{
+  display: inline-block;
+}
 
 
 
