@@ -22,12 +22,12 @@
 
       <p>( <%= project.date %> )</p>
 
-      <a class="btn_preview" title='Preview'><p class ='preview_icon'><%=image_tag('preview_icon.png')%><br/>Preview</p></a>
+      <a class="btn_preview" title='Preview'><p class ='preview_icon'><%=image_tag('project_nav/preview_icon.png')%><br/>Preview</p></a>
 
-      <a class="btn_top" title="Scoll to Top"><p class='top_icon'><%=image_tag('arrow_top.png', :class=>'arrow_top')%><br/>Back to TOP</p></a>
+      <a class="btn_top" title="Scoll to Top"><p class='top_icon'><%=image_tag('project_nav/arrow_top.png', :class=>'arrow_top')%><br/>Back to TOP</p></a>
 
 
-      <%= link_to '<p class="description_icon"><img src="/assets/photo.png"/><br/>Description</p>'.html_safe, project_path(:id => project.id), :title => "Slide Show for Description", :class=>'btn_description' %>
+      <%= link_to '<p class="description_icon"><img src="/assets/project_nav/photo.png"/><br/>Description</p>'.html_safe, project_path(:id => project.id), :title => "Slide Show for Description", :class=>'btn_description' %>
 
   <!--small images for preview -->
       <section id="<%= class_name %>" class='images'>

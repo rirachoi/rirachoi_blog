@@ -42,11 +42,11 @@ $(document).ready(function(){
  $('.faceImg').css({'box-shadow':'none'});
 
  $('#github').on('mouseover', function(){
-  $('#github').attr('src', '/assets/github_icon.png');
+  $('#github').attr('src', '/assets/contact/github_icon.png');
  });
 
   $('#github').on('mouseleave', function(){
-    $('#github').attr('src', '/assets/github.png');
+    $('#github').attr('src', '/assets/contact/github.png');
  });
 
 });

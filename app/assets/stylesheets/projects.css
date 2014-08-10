@@ -19,7 +19,7 @@
   width:824px;
   height:1300px;
   margin:auto auto -200px 8%;
-  background:transparent url(content_background.png) no-repeat top left;
+  background:transparent url(pages/content_background.png) no-repeat top left;
   text-align: center;
 }
 
@@ -118,7 +118,7 @@ img{
 }
 
 .description_icon, .preview_icon, .top_icon{
-  background: url(round_nav.png)no-repeat;
+  background: url(project_nav/round_nav.png)no-repeat;
   background-size: 100%, 100%;
   width: 170px;
   height: 150px;

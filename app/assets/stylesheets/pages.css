@@ -13,7 +13,7 @@ body{
   font-family: 'Indie Flower', fantasy;
   max-width: 960px;
   text-align: center;
-  background: url(simple_wood.jpg);
+  background: url(pages/simple_wood.jpg);
   /*  background-color: rgba(0, 0, 0, 0.);*/
   text-align: center;
   background-size: 100%;
@@ -38,7 +38,7 @@ body{
 #container{
   margin: auto;
   width: 900px;
-  background: url(spring_notebook.png) no-repeat;
+  background: url(pages/spring_notebook.png) no-repeat;
   background-size: 100% 100%;
   height: 800px;
   margin-left: 2%;
@@ -115,16 +115,6 @@ h2 {
 
 
 
-.btn_description, .btn_preview, .btn_top{
-  display: inline-block;
-}
-
-.btn_description img, .btn_preview img, .btn_top img{
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  cursor: pointer;
-}
 
 /*.btn_description:hover, .btn_preview:hover, .btn_top:hover {
   ;
@@ -167,7 +157,7 @@ ul#navigation li a {
     width: 100px;
     height: 35px;
     color: #603d05;
-    background: transparent url(item.png) no-repeat bottom right;
+    background: transparent url(pages/item.png) no-repeat bottom right;
     text-decoration:none;
     text-align: center;
     padding-top: 80px;
