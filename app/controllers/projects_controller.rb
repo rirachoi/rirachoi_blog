@@ -14,6 +14,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    @projects = Project.all
     @project = Project.find params[:id]
     respond_to do |format|
       format.html {}

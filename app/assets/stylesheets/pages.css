@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
-@import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
-@import url(http://fonts.googleapis.com/css?family=Inconsolata);
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 *{
   text-decoration: none;
@@ -80,46 +78,7 @@ h2 {
   background-size: 104% 114%;
   font-family: 'Indie Flower', fantasy;
 }
-/*
-.btn_description, .btn_preview{
-  height: 140px;
-  width: 140px;
-  line-height: 4.5em;
-  outline: none;
-  background: rgb(201, 35, 19);
-  box-shadow: inset 0 -.125rem rgba(0,0,0,.2);
-  border-radius: 100% 100% 0 100%;
-  cursor: pointer;
-  transform-origin: 100% 100%;
-  margin-bottom: 3%;
-  text-shadow: 3px 3px 5px rgb(0,0,0);
-}
 
-.btn_top{
-  height: 130px;
-  width: 124px;
-  line-height: 4.5em;
-  outline: none;
-  background: rgb(201, 35, 19);
-  box-shadow: inset 0 -.125rem rgba(0,0,0,.2);
-  border-radius: 34%;
-  cursor: pointer;
-  transform-origin: 100% 100%;
-  margin: 3%;
-  text-shadow: 3px 3px 5px rgb(0,0,0);
-}
-
-.btn_preview{
-  border-radius: 100% 100% 100% 0;
-}*/
-
-
-
-
-/*.btn_description:hover, .btn_preview:hover, .btn_top:hover {
-  ;
-}
-*/
 #blank{
   height:5%;
   margin-top: 15%;

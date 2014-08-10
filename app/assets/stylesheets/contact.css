@@ -6,7 +6,6 @@
 #contact_body {
   height: 100%;
   overflow: hidden;
-  font: 75% "Helvetica", Arial, sans-serif;
 }
 
 input[type="checkbox"] {

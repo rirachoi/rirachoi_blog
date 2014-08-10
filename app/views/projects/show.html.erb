@@ -2,24 +2,46 @@
   <%= @project.id %>
 </div>
 
+  <div class="description_text">
+    <h2><%= @project.title%> (<%= @project.date %>)</h2>
+    <p><%= @project.program %></p>
 
- <div class="wrapper">
-  <ul id="sb-slider" class='sb-slider'>
-    <% @project.image_description.each do |des_image| %>
-    <li><%= image_tag(des_image, :class =>'sliced_image') %></li>
+  </div>
 
-    <div class="sb-description">
-      <h3><%= @project.title %>( <%=@project.date %> )</h3>
-    </div>
+  <div class="wrapper">
+    <ul id="sb-slider" class='sb-slider'>
+      <% @project.image_description.each do |des_image| %>
+      <li><%= image_tag(des_image, :class =>'sliced_image') %></li>
 
+      <div class="sb-description">
+        <h3><%= @project.title %>( <%=@project.date %> )</h3>
+      </div>
+
+      <% end %>
+    </ul>
+
+   </div>
+
+  <div id="shadow" class="shadow"></div>
+
+  <div id="nav-arrows" class="nav-arrows">
+    <a href="#" class="right" title="Next">Next</a>
+    <a href="#" class="left" title="Previous">Previous</a>
+  </div>
+
+  <div class="links_project_item">
+    <% if @project.id == @projects.first.id %>
+      <%= link_to 'Last Item', project_path(:id => @projects.last.id), :class=>'last_item_link' %>
+    <% else %>
+      <%= link_to 'Previous Item', project_path(:id => @project.id-1), :class=>'pre_item_link' %>
     <% end %>
-  </ul>
 
- </div>
+    <%= link_to 'Projects List', projects_path, :class=>'list_link' %>
 
-<div id="shadow" class="shadow"></div>
+    <% if @project.id == @projects.last.id %>
+      <%= link_to 'First Item', project_path(:id => @projects.first.id), :class=>'first_item_link'%>
+    <% else %>
+      <%= link_to 'Next Item', project_path(:id => @project.id+1), :class=>'next_item_link' %>
+    <% end %>
+  </div>
 
-<div id="nav-arrows" class="nav-arrows">
-  <a href="#" class="right" title="Next">Next</a>
-  <a href="#" class="left" title="Previous">Previous</a>
-</div>

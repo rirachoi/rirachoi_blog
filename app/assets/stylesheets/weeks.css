@@ -47,7 +47,7 @@
   width:500px;
   height:800px;
   margin:auto auto -200px 8%;
-  background:transparent url(content_background.png) no-repeat top left;
+  background:transparent url(pages/content_background.png) no-repeat top left;
   text-align: center;
 }
 

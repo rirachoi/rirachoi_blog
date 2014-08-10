@@ -147,7 +147,7 @@ p6 = Project.create(
 p7 = Project.create(
   title: 'SOLUHO Calendar',
   date: 'Week 5',
-  program: 'Ruby on Rails with Enrico Public Holiday API, SQL and Lunar Calendar csv file',
+  program: 'Ruby on Rails with Postgres, Enrico Public Holiday API, Lunar Calendar CSV file',
   main_image: "/assets/image/soluho_calendar/main.png",
   images: [
     "/assets/image/soluho_calendar/user_calendar.png",

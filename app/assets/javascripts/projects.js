@@ -79,6 +79,7 @@ $(document).ready(function(){
   $('.btn_preview').on('click', function(){
     $("html, body").animate({ scrollTop: ($('#content').height())-100 }, 'slow');
     $('.images').fadeIn('slow');
+    $('.btn_preview').css({'transform':'rotateZ(360deg)'});
 
     imagePreview();
 
@@ -86,6 +87,7 @@ $(document).ready(function(){
 
   $('.btn_top').on('click', function(){
     $("html, body").animate({ scrollTop: 0 }, 'slow');
+    $('.btn_top').css({'transform':'rotateZ(360deg)'});
   });
 
 

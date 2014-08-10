@@ -62,17 +62,16 @@ $(document).ready(function(){
   }).done(function(res){
 
     var $des_image = res.image_description
-    // for(var g=0; g<$des_image.length; g++){
-    //   var $img = $('<img/>').addClass('des_image');
-    //   $img.attr('src', $des_image[g]).css({'height':$currentWindowHeight+'px;'});
-    //   $('#images_details').append($img);
-    // }
+
     $('#container').css({'background':'none'});
     imageSliceShow();
 
-
   });
 
+  $('.right').on('click', function(){
+    $("html, body").animate({ scrollTop: $('.wrapper').height() }, 2000);
+
+  })
 
 });
 
