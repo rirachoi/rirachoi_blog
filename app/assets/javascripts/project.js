@@ -56,20 +56,12 @@ $(document).ready(function(){
 
     };
 
-  $.ajax({
-    url:'/projects/' + $currentProjectId,
-    dataType: 'json'
-  }).done(function(res){
+  imageSliceShow();
 
-    var $des_image = res.image_description
-
-    $('#container').css({'background':'none'});
-    imageSliceShow();
-
-  });
+  $('#container').css({'background':'none'});
 
   $('.right').on('click', function(){
-    $("html, body").animate({ scrollTop: $('.wrapper').height() }, 2000);
+    $("html, body").animate({ scrollTop: ($('.wrapper').height()/2)+ 20 }, 2000);
 
   })
 

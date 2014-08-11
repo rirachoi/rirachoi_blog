@@ -6,6 +6,21 @@
     <h2><%= @project.title%> (<%= @project.date %>)</h2>
     <p><%= @project.program %></p>
 
+      <div class="links_project_item">
+    <% if @project.id == @projects.first.id %>
+      <%= link_to image_tag('projects/last_left.png',:title => 'Last Project'), project_path(:id => @projects.last.id), :class=>'last_item_link' %>
+    <% else %>
+      <%= link_to image_tag('projects/backward_arrow.png',:title => 'Previous Project'), project_path(:id => @project.id-1), :class=>'pre_item_link' %>
+    <% end %>
+
+    <%= link_to image_tag('projects/list_icon.png',:title => 'Projects List'), projects_path, :class=>'list_link' %>
+
+    <% if @project.id == @projects.last.id %>
+      <%= link_to image_tag('projects/last_right.png',:title => 'First Project'), project_path(:id => @projects.first.id), :class=>'first_item_link'%>
+    <% else %>
+      <%= link_to image_tag('projects/forward_arrow.png',:title => 'Next Project'), project_path(:id => @project.id+1), :class=>'next_item_link' %>
+    <% end %>
+  </div>
   </div>
 
   <div class="wrapper">
@@ -29,19 +44,5 @@
     <a href="#" class="left" title="Previous">Previous</a>
   </div>
 
-  <div class="links_project_item">
-    <% if @project.id == @projects.first.id %>
-      <%= link_to 'Last Item', project_path(:id => @projects.last.id), :class=>'last_item_link' %>
-    <% else %>
-      <%= link_to 'Previous Item', project_path(:id => @project.id-1), :class=>'pre_item_link' %>
-    <% end %>
 
-    <%= link_to 'Projects List', projects_path, :class=>'list_link' %>
-
-    <% if @project.id == @projects.last.id %>
-      <%= link_to 'First Item', project_path(:id => @projects.first.id), :class=>'first_item_link'%>
-    <% else %>
-      <%= link_to 'Next Item', project_path(:id => @project.id+1), :class=>'next_item_link' %>
-    <% end %>
-  </div>
 
