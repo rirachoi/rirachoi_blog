@@ -17,9 +17,11 @@
 //= require modernizr.custom.46884
 //= require jquery.slicebox
 //= require project.js
+//= require about.js
 //= require pages.js
 //= require weeks.js
 //= require projects.js
+
 
 
 

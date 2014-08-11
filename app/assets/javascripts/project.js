@@ -60,11 +60,6 @@ $(document).ready(function(){
 
   $('#container').css({'background':'none'});
 
-  $('.right').on('click', function(){
-    $("html, body").animate({ scrollTop: ($('.wrapper').height()/2)+ 20 }, 2000);
-
-  })
-
 });
 
 

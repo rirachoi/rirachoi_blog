@@ -1,22 +1,21 @@
 .weekContainer{
   border-radius: 100%;
-  color: white;
-  background-color: green;
-  width: 110px;
-  height: 110px;
+  background: url(project_nav/round_nav.png)no-repeat;
+  background-size: 100%;
+  width: 150px;
+  height: 150px;
   text-align: center;
   display: inline-block;
   font-size: 1.3em;
-  margin: 4%;
+  margin: 1%;
   cursor: pointer;
-  box-shadow: inset 0 -.125rem rgba(0,0,0,.4);
- /* box-shadow: 0 0 0.5em black;*/
+  opacity: 0.8;
 }
 
 .weekContainer p {
-  font-family: 'Indie Flower', fantasy;
-  text-shadow: 3px 3px 5px rgb(0,0,0);
-  color: white;
+  font-family: 'Special Elite', fantasy;
+  color: rgba(0,0,0,0.7);
+  margin-top: 50px;
 
 }
 
@@ -26,21 +25,21 @@
 }
 
 .weekNum{
-  font-size: 40px;
-  color: yellow;
-  font-family: 'Indie Flower', fantasy;
+  font-size: 25px;
+  color: rgb(107, 154, 107);
+  font-family: 'Special Elite', fantasy;
 }
 
 .weekContainer:hover{
-  background-color: #005200;
+  opacity: 1;
 }
 
 .weekContainer:hover p{
-  color: yellow;
+  color: black;
 }
 
 .weekContainer:hover .weekNum{
-  color: white;
+  color: rgb(60, 95, 60);
 }
 
 .week_details{
