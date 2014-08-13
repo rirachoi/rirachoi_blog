@@ -98,6 +98,9 @@
 }
 
 /**.about_me information **/
+.strong, .strong p {
+  font-size: 15px;
+}
 
 .info header {
   color: #FFF;
@@ -114,11 +117,11 @@
   font-size: 2em;
 }
 
-.info header .state {
+/*.info header .state {
   border: 1px solid #FFF;
   padding: 0px 3px;
 }
-
+*/
 .info p {
   padding: 1.2em 1.4em;
   margin: 2px 0 0;
@@ -160,19 +163,19 @@
 /* Posters and still images */
 
 .scene:nth-child(1) .about_me .poster {
-  background-image: url(../img/poster01.jpg);
+  background-image: url(about/korean_beauty.jpg);
 }
 
 .scene:nth-child(2) .poster {
-  background-image: url(../img/poster02.jpg);
+  background-image: url(about/chopping_paper.jpg);
 }
 
 .scene:nth-child(3) .poster {
-  background-image: url(../img/poster03.jpg);
+  background-image: url(about/dancing_with_cat.jpg);
 }
 
 .scene:nth-child(1) .info header {
-  background-image: url(../img/still01.jpg);
+  background-image: url(pages/brown_shade_wood.jpg);
 }
 
 .scene:nth-child(2) .info header {
