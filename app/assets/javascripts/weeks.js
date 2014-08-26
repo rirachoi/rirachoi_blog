@@ -1,42 +1,49 @@
 
 $(document).ready(function(){
 
+  var createWeekContainer = function(response){
+
+    for(var i=0; i<(response.length); i++){
+      var $weekContainer = $('<div/>')
+            .addClass("weekContainer boxAnimation-target");
+      var $idP = $('<p>'+response[i].id+'</p>')
+            .addClass("currentWeekId")
+      $currentWeekId = $idP.text();
+      var $weekLetter = $('<p>Week </p>')
+            .addClass('weekLetter')
+            .append('<span class="weekNum">'+(i+1)+'</span>');
+      $weekContainer.append($weekLetter).append($idP);
+      $('.weeks').append($weekContainer);
+    }
+
+  }
+
+
   $.ajax({
     url: '/weeks',
     dataType: 'json'
-  }).done(function(response){
+  }).done(function(data){
 
-    for(var i=0; i<(response.length); i++){
-      var $weekContainer = $('<div class="weekContainer boxAnimation-target"></div>');
-      var $idP = $('<p class="currentWeekId" style="display:none;">'+response[i].id+'</p>');
-      $currentWeekId = $idP.text();
-      var $weekLetter = $('<p class="weekLetter">Week <span class="weekNum">'+ (i+1) +'</span></p>');
-      $weekContainer.append($weekLetter).append($idP);
-      $('.weeks').append($weekContainer);
-      $('.week_details').hide();
-    }
+    createWeekContainer(data);
 
 
     $('.weeks > div').on('click', function(event){
-      $('.week_details').show();
-
+      event.preventDefault();
       var week_num = $(this).find('span.weekNum').text();
-        $('.week_details').animate({marginRight:-100}, 1000, function(){
-          $('.week_details div').hide();
-          $('#Week'+week_num).show();
-          $this = $(this)
-          $this.animate({marginRigth:100}, 500);
-        }); // end of week_details animation
+      $('.week_details').fadeOut(1000);
+      $('#container').animate({marginLeft:-20+'%'}, 1000);
 
-      }); //end of click weekContaine
+
+      $('.week_details').animate({right:20+'%'}, 1000, function(){
+        $("html, body").animate({ scrollTop: ($('#container').height()+200) }, 'slow')
+        $('.week_details').fadeIn(1000);
+        $('.week_details div').hide();
+        $('#Week'+week_num).fadeIn(1000);
+        $this = $(this)
+        $this.animate({marginRight:-15+'%'}, 500);
+      }); // end of week_details animation
+    }); //end of click weekContaine
 
   }); //end of weeks ajax
-
-
-/////////// after click the week container /////////
-
-
-
-
 
 }); // end of document.ready

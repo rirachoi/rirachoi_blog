@@ -12,9 +12,9 @@
     <p><span class="my_info">Sydney NSW </span></p>
 
     <div id="myinfo_icon">
-      <%= link_to(image_tag('contact/gmail.png', :title =>'Gmail'), "rira.nunu.choi@gmail.com", :class => 'my_info') %>
-      <%= link_to(image_tag('contact/github.png', :title=>'Github', :id => 'github'), 'https://github.com/rirachoi') %>
-      <%= link_to(image_tag('contact/linkedin.png', :title=>'Linkedin'), 'https://github.com/rirachoi', :class => 'my_info') %>
+      <a href="mailto:rira.nunu.choi@gmail.com" class="my_info"><%= image_tag('contact/gmail.png', :title =>'Gmail') %></a>
+      <%= link_to(image_tag('contact/github.png', :title=>'Github', :id => 'github'), 'http://rirachoi.github.io', :target => '_blank') %>
+      <%= link_to(image_tag('contact/linkedin.png', :title=>'Linkedin'), 'https://au.linkedin.com/in/rirachoi', :class => 'my_info', :target => '_blank') %>
     </div>
 
   <div/>

@@ -35,4 +35,6 @@ $(document).ready(function(){
     $('.bg').css('top',-(scrolled*0.2)+'px');
   }
 
+  $('.week_details').hide();
+
 });

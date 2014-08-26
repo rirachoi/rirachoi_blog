@@ -44,9 +44,23 @@
 
 .week_details{
   width:500px;
-  height:800px;
+  height:500px;
   margin:auto auto -200px 8%;
-  background:transparent url(pages/content_background.png) no-repeat top left;
+  background: url(pages/a_paper.png)no-repeat;
+  background-size: 100% 100%;
+  color: black;
+  font-size: 30px;
+  position: fixed;
+  right: 10%;
+  top:20%;
+  -moz-transform:rotate(-12deg);
+  -webkit-transform:rotate(-12deg);
+  transform:rotate(-12deg);
+
+}
+
+.week_details h2{
+  color: black;
   text-align: center;
 }
 
@@ -54,6 +68,20 @@
   display: inline-block;
 }
 
+.currentWeekId{
+  display: none;
+}
+
+
+
+/*.week_content{
+  position: fixed;
+  right:0;
+  width: 300px;
+  height: 700px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}*/
 
 
 

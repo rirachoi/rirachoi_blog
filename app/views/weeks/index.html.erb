@@ -6,9 +6,10 @@
   </div>
 
   <div class="week_details">
+
     <% @weeks.each do |week| %>
       <% week_class_name = week.name.gsub(/ /, "")%>
-      <div id="<%=week_class_name %>" class="text">
+      <div id="<%=week_class_name %>">
         <h2 class="week_name"><%= week.name %></h2>
 
         <ul>

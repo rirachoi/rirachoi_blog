@@ -10,9 +10,9 @@ w4 = Week.create(:name => 'Week 4', :study => ['Rails MVC', 'Deployment', 'Postg
 w5 = Week.create(:name => 'Week 5', :study => ['First Project'])
 w6 = Week.create(:name => 'Week 6', :study => ['Computation','Javascript', 'DOM API', 'JSON'])
 w7 = Week.create(:name => 'Week 7', :study => ['Javascript Framework','Underscore','jQuery', 'Geocoder'])
-w8 = Week.create(:name => 'Week 8', :study => ['Second Project - Group'])
+w8 = Week.create(:name => 'Week 8', :study => ['Second Project (Group)'])
 w9 = Week.create(:name => 'Week 9', :study => ['Backbone', 'TDD', 'Minitest'])
-w10 = Week.create(:name => 'Week 10', :study => ['Coffee Script','SCSS','Factroy Girl','Rspec','Cucumber','Simplecov','Regular Experession'])
+w10 = Week.create(:name => 'Week 10', :study => ['Coffee Script','SCSS','Factory Girl','Rspec','Cucumber','Simplecov','Regular Experession'])
 w11 = Week.create(:name => 'Week 11', :study => ['Computer Science'])
 w12 = Week.create(:name => 'Week 12', :study => ['Last Project'])
 
