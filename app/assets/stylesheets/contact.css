@@ -66,12 +66,12 @@ input[type="checkbox"]:checked ~ #der {
 }
 
 #izq {
-  background: url(contact/contact_notebook_left.png) no-repeat top right;
+  background: url(http://i.imgur.com/qYpNpM0.png?1) no-repeat top right;
   background-size: 100% 100%;
 }
 
 #der {
-  background: url(contact/contact_notebook_right.png) no-repeat left top;
+  background: url(http://i.imgur.com/CM9zqFU.png?1) no-repeat left top;
   left:50%;
   background-size: 100% 100%
 }
