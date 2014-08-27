@@ -124,4 +124,16 @@ ul#navigation li a {
     cursor: pointer;
 }
 
+.ongoing_msg{
+  display: inline-block;
+}
 
+.ongoing_msg div{
+  display: inline-block;
+  margin: 10px;
+}
+
+.ongoing_msg img{
+  width: 250px;
+  height: 150px;
+}
