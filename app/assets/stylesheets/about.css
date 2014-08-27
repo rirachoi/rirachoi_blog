@@ -175,7 +175,7 @@
 }
 
 .scene:nth-child(1) .info header {
-  background-image: url(pages/brown_shade_wood.jpg);
+  background-image: url(findyourself.gif);
 }
 
 .scene:nth-child(2) .info header {
@@ -183,7 +183,7 @@
 }
 
 .scene:nth-child(3) .info header {
-  background-image: url(pages/brown_shade_wood.jpg);
+  background-image: url(profile1.gif);
 }
 
 /** Fallback **/

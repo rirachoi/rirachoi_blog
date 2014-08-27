@@ -143,67 +143,7 @@ p6 = Project.create(
   )
 
 
-
-p7 = Project.create(
-  title: 'SOLUHO Calendar',
-  date: 'Week 5',
-  program: 'Ruby on Rails with Postgres, Enrico Public Holiday API, Lunar Calendar CSV file',
-  main_image: "/assets/image/soluho_calendar/main.png",
-  images: [
-    "/assets/image/soluho_calendar/user_calendar.png",
-    "/assets/image/soluho_calendar/user_event_list.png",
-    "/assets/image/soluho_calendar/user_details.png",
-    "/assets/image/soluho_calendar/event_category.png",
-    "/assets/image/soluho_calendar/int_public_holiday.png",
-    "/assets/image/soluho_calendar/int_public_holiday_list.png"
-    ],
-  image_description: [
-    "/assets/image_hover/soluho_calendar/main.png",
-    "/assets/image_hover/soluho_calendar/user_calendar.png",
-    "/assets/image_hover/soluho_calendar/user_event_list.png",
-    "/assets/image_hover/soluho_calendar/user_details.png",
-    "/assets/image_hover/soluho_calendar/event_category.png",
-    "/assets/image_hover/soluho_calendar/int_public_holiday.png",
-    "/assets/image_hover/soluho_calendar/int_public_holiday_list.png"
-    ]
-  )
-
-
-p8 = Project.create(
-  title: 'FireBall - Game Part',
-  date: 'Week 8',
-  program: 'Javascript, jQuery with Google translate API and Ajax',
-  main_image: "/assets/image/fireball/game_main.png",
-  images: [
-      "/assets/image/fireball/game_lang.png",
-      "/assets/image/fireball/game_play.png",
-      "/assets/image/fireball/game_play2.png",
-      "/assets/image/fireball/game_finish1.png",
-      "/assets/image/fireball/game_finish2.png",
-      "/assets/image/fireball/game_finish4.png",
-      "/assets/image/fireball/chat.png",
-      "/assets/image/fireball/chat_lang.png",
-      "/assets/image/fireball/edit.png",
-      "/assets/image/fireball/index.png"
-    ],
-  image_description: [
-      "/assets/image_hover/fireball/game_main.png",
-      "/assets/image_hover/fireball/game_lang.png",
-      "/assets/image_hover/fireball/game_play.png",
-      "/assets/image_hover/fireball/game_play2.png",
-      "/assets/image_hover/fireball/game_finish1.png",
-      "/assets/image_hover/fireball/game_finish2.png",
-      "/assets/image_hover/fireball/game_finish4.png",
-      "/assets/image_hover/fireball/chat.png",
-      "/assets/image_hover/fireball/chat_lang.png",
-      "/assets/image_hover/fireball/edit.png",
-      "/assets/image_hover/fireball/index.png"
-    ]
-  )
-
 w1.projects << p1
 w2.projects << p2
 w3.projects << p3 << p4
 w4.projects << p5 << p6
-w5.projects << p7
-w8.projects << p8
