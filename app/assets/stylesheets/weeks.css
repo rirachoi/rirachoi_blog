@@ -64,6 +64,11 @@
   text-align: center;
 }
 
+.week_details li{
+  text-align: left;
+  margin-left: 100px;
+}
+
 .week_details, .weeks{
   display: inline-block;
 }
@@ -72,6 +77,10 @@
   display: none;
 }
 
+.checked_animation{
+  width: 100px;
+  height:100px;
+}
 
 
 /*.week_content{

@@ -32,8 +32,6 @@ $(document).ready(function(){
       var week_num = $(this).find('span.weekNum').text();
       $('.week_details').fadeOut(1000);
       $('#container').animate({marginLeft:-20+'%'}, 1000);
-
-
       $('.week_details').animate({right:20+'%'}, 1000, function(){
         $("html, body").animate({ scrollTop: ($('#container').height()+200) }, 'slow')
         $('.week_details').fadeIn(1000);

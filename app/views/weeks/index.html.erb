@@ -1,24 +1,23 @@
-<h1 id='header_green'>W<span id='wdi_title'>eb</span> D<span id='wdi_title'>evelopment</span> I<span id='wdi_title'>mmersive</span> 5 </h1>
+<h1 id='header_green'>
+  W<span id='wdi_title'>eb</span> D<span id='wdi_title'>evelopment</span> I<span id='wdi_title'>mmersive</span> 5
+</h1>
 
 
-  <div class="weeks">
+<div class="weeks"></div>
 
-  </div>
+<div class="week_details">
+  <% @weeks.each do |week| %>
+    <% week_class_name = week.name.gsub(/ /, "")%>
+    <div id="<%=week_class_name %>">
+      <h2 class="week_name"><%= week.name %></h2>
 
-  <div class="week_details">
-
-    <% @weeks.each do |week| %>
-      <% week_class_name = week.name.gsub(/ /, "")%>
-      <div id="<%=week_class_name %>">
-        <h2 class="week_name"><%= week.name %></h2>
-
-        <ul>
-          <% week.study.each do |s| %>
-            <li class="what_i_learnt"><%= s %></li>
-          <% end %>
-        </ul>
-
-      </div>
-    <% end %>
-  </div>
+      <ul>
+        <% week.study.each do |s| %>
+          <li class="what_i_learnt">- <%= s %></li>
+        <% end %>
+      </ul>
+      <%#= image_tag('pages/checked.gif', class: 'checked_animation')%>
+    </div>
+  <% end %>
+</div>
 
