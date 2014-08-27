@@ -7,12 +7,6 @@ class HomeworksController < ApplicationController
       end
   end
 
-  def new
-  end
-
-  def edit
-  end
-
   def show
     @homework = Homework.find params[:id]
   end

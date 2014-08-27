@@ -18,7 +18,6 @@ $(document).ready(function(){
 
   }
 
-
   $.ajax({
     url: '/weeks',
     dataType: 'json'

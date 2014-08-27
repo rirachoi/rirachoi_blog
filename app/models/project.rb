@@ -17,5 +17,5 @@
 #
 
 class Project < ActiveRecord::Base
-  belongs_to :day
+  belongs_to :week
 end

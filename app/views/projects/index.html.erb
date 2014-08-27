@@ -1,41 +1,63 @@
 <h1 id="header_yellow">Rira Choi's Projects</h1>
 
-<div class="best_homeworks" id='best_homeworks'>
+<div class="about_wrapper">
+  <ul class="stage clearfix">
 
-  <% @projects.each do |project| %>
-    <% class_name = project.title.gsub(/ /,"") %>
-    <%= image_tag(project.main_image, :class => class_name, :title => 'Click Me') %>
-  <% end %>
+    <li class="scene">
+      <div class="about_me" onclick="return true">
+        <div class="poster">
+          <h3>SOLUHO CALENDAR</h3>
+        </div>
+        <div class="info">
+          <header>
+            <a href="http://publicholiday-calendar.herokuapp.com">SOLUHO CALENDAR</a>
+          </header>
+          <p>
+            A Solar, Lunar and International Public Holiday calendar application using: Ruby on Rails, enrico gem, API and Lunar date CSV file.
+            <br/>
+            The user can correlate international holidays to the lunar calendar. Allows personalized event management with icons.
 
-</div>
+          </p>
+        </div>
+      </div>
+    </li>
 
+    <li class="scene">
+      <div class="about_me" onclick="return true">
+        <div class="poster">
+          <h3>FIREBALL</h3>
+        </div>
+        <div class="info">
+          <header>
+            <a href="http://fireballtalks.herokuapp.com">FIREBALL</a>
+          </header>
+          <p>
+            An international chat translator and game application with 65+ own-brand stickers using: Ruby on Rails, Google translate API, JavaScript and jQuery.
+            <br/>
+            Application is split into two core functions. Chat function allows language learning with audio and custom animations. Game function teaches users languages through word memory and typing with scoring.
+          </p>
+        </div>
+      </div>
+    </li>
 
-<div id="content">
-  <% @projects.each do |project| %>
-  <% class_name = project.title.gsub(/ /,"") %>
-    <div id="<%= class_name %>" class="text">
-  <!--main image -->
-      <%= image_tag(project.main_image, :id => class_name, :class => 'preview_mainImg')%>
+    <li class="scene">
+      <div class="about_me" onclick="return true">
+        <div class="poster">
+          <h3>WORLD MAP NEWS</h3>
+        </div>
+        <div class="info">
+          <header>
+            <a href="http://worldmapnews.herokuapp.com">WORLD MAP NEWS</a>
+          </header>
+          <p>
+            An international news application with the world map using: Ruby on Rails, jQuery, feedzilla API, TDD with Simplecov and RSpec.
+            <br/>
+            A user can search news based on geographical location and further optimize search results based on keywords or categories. Users can save search preferences.
 
-  <!--projects detains -->
-      <h2 class="project_name"><%= project.title %></h2>
+          </p>
+        </div>
+      </div>
+    </li>
 
-      <p>( <%= project.date %> )</p>
-
-      <a class="btn_preview" title='Preview'><p class ='preview_icon'><%=image_tag('project_nav/preview_icon.png')%><br/>Preview</p></a>
-
-      <a class="btn_top" title="Scoll to Top"><p class='top_icon'><%=image_tag('project_nav/arrow_top.png', :class=>'arrow_top')%><br/>Back to TOP</p></a>
-
-
-      <%= link_to '<p class="description_icon"><img src="/assets/project_nav/photo.png"/><br/>Description</p>'.html_safe, project_path(:id => project.id), :title => "Slide Show for Description", :class=>'btn_description' %>
-
-  <!--small images for preview -->
-      <section id="<%= class_name %>" class='images'>
-        <% project.images.each do |image| %>
-          <%= link_to(image_tag(image, :class => "small_images"), image, :title => project.title, :id=>'preview') %>
-        <%end %>
-      </section>
-
-    </div>
-  <% end %>
-</div>
+  </ul>
+</div><!-- /about_wrapper -->

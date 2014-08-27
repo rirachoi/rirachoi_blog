@@ -10,9 +10,5 @@
 #
 
 class Week < ActiveRecord::Base
-  has_many :days
   has_many :projects
-  # , :through => :days
-  has_many :homeworks
-  # , :through => :days
 end

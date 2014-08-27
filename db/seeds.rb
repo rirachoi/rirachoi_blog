@@ -1,6 +1,4 @@
 Week.destroy_all
-Day.destroy_all
-Homework.destroy_all
 Project.destroy_all
 
 w1 = Week.create(:name => 'Week 1', :study => ['Command line','Ruby','Debugging','Git'])

@@ -7,12 +7,6 @@ class ProjectsController < ApplicationController
       end
   end
 
-  def new
-  end
-
-  def edit
-  end
-
   def show
     @projects = Project.all
     @project = Project.find params[:id]

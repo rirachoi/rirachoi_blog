@@ -132,6 +132,10 @@
   border-top: 10px solid #555;
 }
 
+.about_me .info header a{
+  color: white;
+}
+
 /* Generate "lighting" using box shadows */
 
 .about_me .poster,
@@ -175,7 +179,7 @@
 }
 
 .scene:nth-child(1) .info header {
-  background-image: url(findyourself.gif);
+  background-image: url(pages/brown_shade_wood.jpg);
 }
 
 .scene:nth-child(2) .info header {
@@ -183,7 +187,7 @@
 }
 
 .scene:nth-child(3) .info header {
-  background-image: url(profile1.gif);
+  background-image: url(pages/brown_shade_wood.jpg);
 }
 
 /** Fallback **/

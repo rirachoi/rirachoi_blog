@@ -8,12 +8,6 @@ class WeeksController < ApplicationController
       end
   end
 
-  def new
-  end
-
-  def edit
-  end
-
   def show
     @week = Week.find params[:id]
       respond_to do |format|

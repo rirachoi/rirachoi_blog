@@ -11,32 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140802065444) do
+ActiveRecord::Schema.define(version: 20140802064458) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "days", force: true do |t|
-    t.string   "name"
-    t.string   "today_i_learnt", default: [], array: true
-    t.string   "images"
-    t.integer  "week_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "homeworks", force: true do |t|
-    t.string   "title"
-    t.string   "date"
-    t.string   "program"
-    t.text     "description"
-    t.string   "image"
-    t.string   "image_description", default: [], array: true
-    t.integer  "day_id"
-    t.integer  "week_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "projects", force: true do |t|
     t.string   "title"
