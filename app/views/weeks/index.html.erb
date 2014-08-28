@@ -16,7 +16,10 @@
           <li class="what_i_learnt">- <%= s %></li>
         <% end %>
       </ul>
-      <%#= image_tag('pages/checked.gif', class: 'checked_animation')%>
+      <section class='img-container'>
+        <%= image_tag("", class: 'homeworkIMG', title: 'Best Homework for the week' )%>
+        <a class="show-me-the-code" title='Check the code' target="blank"><%= image_tag('pages/github.png', class: 'github')%></a>
+      </section>
     </div>
   <% end %>
 </div>

@@ -36,4 +36,5 @@ $(document).ready(function(){
   $('.pages-about').css({'background':'none'});
   $('.projects-index').css({'background':'none'});
 
+
 });

@@ -38,15 +38,16 @@ $(document).ready(function(){
   }
   /// contact js
 
- var openTimer = setTimeout(openDoor, 1000);
- $('.faceImg').css({'box-shadow':'none'});
+  var openTimer = setTimeout(openDoor, 1000);
+  $('.faceImg').css({'box-shadow':'none'});
 
- $('#github').on('mouseover', function(){
-  $('#github').attr('src', '/assets/contact/github_icon.png');
- });
+
+  $('#github').on('mouseover', function(){
+    $('#github').attr('src', '/assets/pages/github_icon.png');
+  });
 
   $('#github').on('mouseleave', function(){
-    $('#github').attr('src', '/assets/contact/github.png');
- });
+    $('#github').attr('src', '/assets/pages/github.png');
+  });
 
 });

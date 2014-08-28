@@ -11,7 +11,7 @@ w7 = Week.create(:name => 'Week 7', :study => ['Javascript Framework','Underscor
 w8 = Week.create(:name => 'Week 8', :study => ['Second Project(Group)','Fireball'])
 w9 = Week.create(:name => 'Week 9', :study => ['Backbone', 'TDD', 'Minitest'])
 w10 = Week.create(:name => 'Week 10', :study => ['Coffee Script','SCSS','Factory Girl','Rspec','Cucumber','Simplecov','Regular Experession'])
-w11 = Week.create(:name => 'Week 11', :study => ['Computer Science'])
+w11 = Week.create(:name => 'Week 11', :study => ['TDD','Computer Science'])
 w12 = Week.create(:name => 'Week 12', :study => ['Last Project','World Map News'])
 
 

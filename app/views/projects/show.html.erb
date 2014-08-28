@@ -26,8 +26,8 @@
 
   <div class="wrapper">
     <ul id="sb-slider" class='sb-slider'>
-      <% @project.image_description.each do |des_image| %>
-      <li><%= image_tag(des_image, :class =>'sliced_image') %></li>
+      <% @project.images.each do |image| %>
+      <li><%= image_tag(image, :class =>'sliced_image') %></li>
 
       <div class="sb-description">
         <h3><%= @project.title %>( <%=@project.date %> )</h3>
