@@ -13,7 +13,7 @@
 }
 
 .weekContainer p {
-  font-family: 'Special Elite', fantasy;
+  font-family: 'Love Ya Like A Sister', "Myriad Pro";
   color: rgba(0,0,0,0.7);
   margin-top: 50px;
 
@@ -27,7 +27,7 @@
 .weekNum{
   font-size: 25px;
   color: rgb(107, 154, 107);
-  font-family: 'Special Elite', fantasy;
+  font-family: 'Love Ya Like A Sister', "Myriad Pro";
 }
 
 .weekContainer:hover{
@@ -43,6 +43,7 @@
 }
 
 .week_details{
+  font-family: 'Love Ya Like A Sister', "Myriad Pro";
   width:550px;
   height:500px;
   margin:auto auto -200px 8%;
@@ -58,6 +59,12 @@
   -webkit-transform:rotate(-12deg);
   transform:rotate(-12deg);
 
+}
+
+.weeks > div:hover p{
+  -moz-transform:rotate(15deg);
+  -webkit-transform:rotate(15deg);
+  transform:rotate(15deg);
 }
 
 .week_details h2{

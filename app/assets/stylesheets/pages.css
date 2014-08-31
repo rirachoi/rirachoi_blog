@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-@import url(https://fonts.googleapis.com/css?family=Special+Elite);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Kranky);
+@import url(http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
 
 *{
   text-decoration: none;
@@ -8,7 +7,7 @@
 }
 
 body{
-  font-family: 'Indie Flower', fantasy;
+  font-family: 'Kranky', fantasy;
   max-width: 960px;
   text-align: center;
   background: url(pages/simple_wood.jpg);
@@ -53,16 +52,18 @@ body{
 
 h1 {
   font-size: 48px;
+  font-family: 'Kranky';
+  padding: 15px 0 5px 0;
 }
 
 p{
-  font-family: 'Special Elite', fantasy;
+  font-family: 'Love Ya Like A Sister', "Myriad Pro";
   font-size: 25px;
   color: rgba(0,0,0,.6);
 }
 
 h2 {
-  font-family: 'Special Elite', fantasy;
+  font-family: 'Love Ya Like A Sister', "Myriad Pro";
   font-size: 50px;
   color: rgba(0,0,0,.6);
 }
@@ -85,7 +86,7 @@ h2 {
 #header_purple{
   background: url(header/header_puple.png) no-repeat;
   background-size: 104% 114%;
-  font-family: 'Indie Flower', fantasy;
+  font-family: 'Kranky', fantasy;
 }
 
 #blank{
@@ -234,7 +235,7 @@ input[type="checkbox"]:checked ~ #der {
 
 #contact_body h3{
   font-size: 20px;
-  font-family: 'Special Elite', fantasy;
+  font-family: 'Love Ya Like A Sister', "Myriad Pro";
   color: rgba(0,0,0,0.6);
 }
 #mobile{
