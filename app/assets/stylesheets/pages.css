@@ -218,12 +218,12 @@ input[type="checkbox"]:checked ~ #der {
 }
 
 #izq {
-  background: url(http://i.imgur.com/qYpNpM0.png?1) no-repeat top right;
+  background: url(https://i.imgur.com/qYpNpM0.png?1) no-repeat top right;
   background-size: 100% 100%;
 }
 
 #der {
-  background: url(http://i.imgur.com/CM9zqFU.png?1) no-repeat left top;
+  background: url(https://i.imgur.com/CM9zqFU.png?1) no-repeat left top;
   left:50%;
   background-size: 100% 100%
 }
