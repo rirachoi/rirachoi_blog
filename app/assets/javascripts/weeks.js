@@ -31,8 +31,14 @@ $(document).ready(function(){
     $('#Week4 .img-container .homeworkIMG').attr('src','/assets/book_keeper.gif');
     $('#Week4 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk4d3/book_keeper');
 
+    $('#Week5 .img-container').hide();
+    $('#Week6 .img-container').hide();
+    $('#Week7 .img-container').hide();
+    $('#Week8 .img-container').hide();
+    $('#Week9 .img-container').hide();
     $('#Week10 .img-container').hide();
     $('#Week11 .img-container').hide();
+    $('#Week12 .img-container').hide();
   }
 
 
