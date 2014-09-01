@@ -20,7 +20,7 @@
 }
 
 .weeks{
-  margin: auto 10% 10% 10%;
+  margin: auto;
   width: 800px;
 }
 
@@ -46,13 +46,13 @@
   font-family: 'Love Ya Like A Sister', "Myriad Pro";
   width:550px;
   height:500px;
-  margin:auto auto -200px 8%;
+  margin:auto auto -2% auto;
   background: url(pages/a_paper.png)no-repeat;
   background-size: 100% 100%;
   color: black;
   font-size: 30px;
   position: fixed;
-  right: 10%;
+  right: 2%;
   top:20%;
   overflow: auto;
   -moz-transform:rotate(-12deg);
@@ -108,6 +108,7 @@
   width: 100px;
   height: 100px;
   right: 0;
+  box-shadow: none;
 }
 
 .img-container{

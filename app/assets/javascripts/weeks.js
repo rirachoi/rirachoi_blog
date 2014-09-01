@@ -49,7 +49,7 @@ $(document).ready(function(){
       var week_num = $(this).find('span.weekNum').text();
       $('.week_details').fadeOut(500);
       $('#container').animate({marginLeft:-20+'%'}, 1000);
-      $('.week_details').animate({right:20+'%'}, 1000, function(){
+      $('.week_details').animate({right:15+'%'}, 1000, function(){
         $("html, body").animate({ scrollTop: ($('#container').height()+200) }, 'slow')
         $('.week_details').fadeIn(700);
         $('.week_details div').hide();
@@ -60,5 +60,6 @@ $(document).ready(function(){
     }); //end of click weekContaine
 
   }); //end of weeks ajax
+
 
 }); // end of document.ready

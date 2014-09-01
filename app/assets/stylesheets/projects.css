@@ -171,6 +171,7 @@ img{
   transform: rotateY(-78deg) translateZ(20px);
 }
 
+
 /** Transform and style the two planes **/
 
 .key-project .poster,
@@ -196,7 +197,7 @@ img{
   -webkit-transform: rotateY(90deg) translateZ(130px);
   -moz-transform: rotateY(90deg) translateZ(130px);
   transform: rotateY(90deg) translateZ(130px);
-  border: 1px solid #B8B5B5;
+  border: 1px solid rgba(0,0,0,0.5);
   font-size: 0.75em;
 }
 
@@ -278,7 +279,7 @@ img{
 }
 
 .csstransforms3d .key-project:hover .poster {
-  box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+  box-shadow: inset 300px 0px 40px rgba(0,0,0,0.5);
 }
 
 .csstransforms3d .key-project .info,
@@ -294,27 +295,34 @@ img{
 /* Posters and still images */
 
 .scene:nth-child(1) .key-project .poster {
-  background-image: url();
+  background-color: rgba(225, 225, 225, 0);
 }
 
 .scene:nth-child(2) .poster {
-  background-image: url();
+  background-color: rgba(225, 225, 225,0);
 }
 
 .scene:nth-child(3) .poster {
-  background-image: url();
+  background-color: rgba(225, 225, 225,0);
 }
 
 .scene:nth-child(1) .info header {
-  background-image: url(pages/brown_shade_wood.jpg);
+  background-image: url(retrotv.png);
+  background-size: 100% 100%;
+  background-color: black;
+
 }
 
 .scene:nth-child(2) .info header {
-  background-image: url(pages/brown_shade_wood.jpg);
+  background-image: url(retrotv.png);
+  background-size: 100% 100%;
+  background-color: black;
 }
 
 .scene:nth-child(3) .info header {
-  background-image: url(pages/brown_shade_wood.jpg);
+  background-image: url(retrotv.png);
+  background-size: 100% 100%;
+  background-color: black;
 }
 
 /** Fallback **/
@@ -323,28 +331,41 @@ img{
   position: relative;
 }
 
-#poster-left li{
-  -moz-transform:rotate(-2deg);
-  -webkit-transform:rotate(-2deg);
-  transform:rotate(-2deg);
+#poster-img{
+  border-radius: 100%;
+  border: 10px solid rgba(95, 79, 65, 0.6);
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  box-shadow: none;
 }
 
-#poster-left .poster{
-  -moz-transform:rotate(-2deg);
-  -webkit-transform:rotate(-2deg);
-  transform:rotate(-2deg);
+.poster-round{
+  width: 220px;
+  height: 220px;
+  margin: 30px auto auto auto;
+  border-radius: 100%;
+  border: 10px solid rgba(128, 100, 79, 0.8);
 }
 
-#poster-right li{
-  -moz-transform:rotate(2deg);
-  -webkit-transform:rotate(2deg);
-  transform:rotate(2deg);
+.poster h3{
+color: white;
 }
 
-#poster-right .poster{
-  -moz-transform:rotate(2deg);
-  -webkit-transform:rotate(2deg);
-  transform:rotate(2deg);
+.demo-github{
+  display: inline-block;
+  bottom: 10px;
+  right: 70px;
+  position:fixed;
+}
+
+.demo-github a{
+  margin:auto auto auto 10px;
+}
+
+.info header h2{
+  font-size: 30px;
+  margin: 30px auto 0 -30px;
 }
 
 /** Media Queries **/
