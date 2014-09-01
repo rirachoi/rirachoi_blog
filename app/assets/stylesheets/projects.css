@@ -179,7 +179,7 @@ img{
   position: absolute;
   width: 260px;
   height: 400px;
-  background-color: #fff;
+  background-color: rgba(54, 44, 38, 0.5);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -197,7 +197,6 @@ img{
   -webkit-transform: rotateY(90deg) translateZ(130px);
   -moz-transform: rotateY(90deg) translateZ(130px);
   transform: rotateY(90deg) translateZ(130px);
-  border: 1px solid rgba(0,0,0,0.5);
   font-size: 0.75em;
 }
 
@@ -255,9 +254,9 @@ img{
   margin: 2px 0 0;
   font-weight: 700;
   font-size: 12px;
-  color: #666;
+  color: whitesmoke;
   line-height: 1.4em;
-  border-top: 10px solid rgba(0,0,0, 0.8);
+  border-top: 5px solid rgba(0,0,0, 0.8);
 }
 
 .key-project .info header a{
@@ -346,27 +345,47 @@ img{
   height: 220px;
   margin: 30px auto auto auto;
   border-radius: 100%;
-  border: 5px solid whitesmoke;
+  border: 5px solid rgba(225,225,225,0.9);
 }
 
 .poster h3{
-color: white;
+  color: white;
+  font-size: 30px;
+  height:70px;
 }
 
 .demo-github{
   display: inline-block;
-  bottom: 10px;
-  right: 70px;
+  bottom: 15px;
   position:fixed;
 }
 
 .demo-github a{
   margin:auto auto auto 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(135, 130, 130, 0.7);
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
+}
+
+.demo-github a:hover{
+  color: rgb(223,50,50);
 }
 
 .info header h2{
   font-size: 30px;
   margin: 30px auto 0 -30px;
+
+}
+
+.info .demo-github img{
+  width: 150px;
+  height: 150px;
+  margin-left: -146px;
+  top: -56px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: none;
 }
 
 /** Media Queries **/

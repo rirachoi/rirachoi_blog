@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     for(var i=0; i<(response.length); i++){
       var $weekContainer = $('<div/>')
-            .addClass("weekContainer boxAnimation-target");
+            .addClass("weekContainer ");
       var $idP = $('<p>'+response[i].id+'</p>')
             .addClass("currentWeekId")
       $currentWeekId = $idP.text();
@@ -53,6 +53,7 @@ $(document).ready(function(){
     $('.weeks > div').on('click', function(event){
       event.preventDefault();
       var week_num = $(this).find('span.weekNum').text();
+      $(this).toggleClass('boxAnimation-target')
       $('.week_details').fadeOut(500);
       $('#container').animate({marginLeft:-20+'%'}, 1000);
       $('.week_details').animate({right:15+'%'}, 1000, function(){
