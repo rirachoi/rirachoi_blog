@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Kranky);
 @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+@import url(https://fonts.googleapis.com/css?family=Mouse+Memoirs);
 
 *{
   text-decoration: none;
@@ -7,7 +7,7 @@
 }
 
 body{
-  font-family: 'Kranky', fantasy;
+  font-family: 'Love Ya Like A Sister', "Myriad Pro";
   max-width: 960px;
   text-align: center;
   background: url(pages/simple_wood.jpg);
@@ -51,8 +51,8 @@ body{
 }
 
 h1 {
-  font-size: 48px;
-  font-family: 'Kranky';
+  font-size: 70px;
+  font-family: 'Mouse Memoirs';
   padding: 15px 0 5px 0;
 }
 
@@ -71,11 +71,13 @@ h2 {
 #header_green{
   background: url(header/header_green.png) no-repeat;
   background-size: 103% 109%;
+/*  color: rgba(26, 122, 31, 0.8);*/
 }
 
 #header_yellow{
   background: url(header/header_yellow.png) no-repeat;
   background-size: 104% 114%;
+  font-size: 70px;
 }
 
 /*#header_pink{
@@ -86,7 +88,6 @@ h2 {
 #header_purple{
   background: url(header/header_puple.png) no-repeat;
   background-size: 104% 114%;
-  font-family: 'Kranky', fantasy;
 }
 
 #blank{
@@ -96,8 +97,8 @@ h2 {
 }
 
 #wdi_title{
-  font-size: 35px;
-  color: #777;
+  font-size: 60px;
+  color: rgba(0,0,0, 0.7);
 }
 
 ul#navigation {
@@ -121,7 +122,9 @@ ul#navigation li {
 ul#navigation li a {
     display: block;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #fff;
+    font-family: 'Mouse Memoirs';
+    font-size: 23px;
+/*    text-shadow: 1px 1px 1px #fff;*/
     float: left;
     width: 100px;
     height: 35px;

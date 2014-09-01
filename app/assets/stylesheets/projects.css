@@ -130,7 +130,7 @@ img{
 .projects_wrapper {
   margin: 0 auto 100px auto;
   max-width: 960px;
-  font-family: 'Kranky', "Myriad Pro";
+  font-family: 'Love Ya Like A Sister', "Myriad Pro";
   margin: 3% auto auto auto;
 }
 
@@ -227,6 +227,7 @@ img{
 /**.key-project information **/
 .strong, .strong p {
   font-size: 15px;
+  color: whitesmoke;
 }
 
 .info header {
@@ -239,11 +240,6 @@ img{
   text-shadow: 0px 1px 1px rgba(0,0,0,1);
 }
 
-.info header h1 {
-  margin: 0 0 2px;
-  font-size: 2em;
-}
-
 /*.info header .state {
   border: 1px solid #FFF;
   padding: 0px 3px;
@@ -254,7 +250,7 @@ img{
   margin: 2px 0 0;
   font-weight: 700;
   font-size: 12px;
-  color: whitesmoke;
+  color: rgba(225,225,225,0.9);
   line-height: 1.4em;
   border-top: 5px solid rgba(0,0,0, 0.8);
 }
@@ -349,9 +345,11 @@ img{
 }
 
 .poster h3{
-  color: white;
-  font-size: 30px;
-  height:70px;
+  color: whitesmoke;
+  font-family: 'Mouse Memoirs';
+  font-size: 50px;
+  height: 80px;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.8);
 }
 
 .demo-github{
@@ -362,9 +360,9 @@ img{
 
 .demo-github a{
   margin:auto auto auto 10px;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgba(135, 130, 130, 0.7);
+  font-size: 40px;
+  font-family: 'Mouse Memoirs';
+  color: rgba(129, 125, 121, 0.7);
   text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
 }
 
@@ -373,16 +371,17 @@ img{
 }
 
 .info header h2{
-  font-size: 30px;
-  margin: 30px auto 0 -30px;
+  font-family: 'Mouse Memoirs';
+  font-size: 40px;
+  margin: 40px auto 0 -30px;
 
 }
 
 .info .demo-github img{
   width: 150px;
   height: 150px;
-  margin-left: -146px;
-  top: -56px;
+  margin-left: -160px;
+  top: -40px;
   position: absolute;
   bottom: 0;
   box-shadow: none;
