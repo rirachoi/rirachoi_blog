@@ -114,8 +114,8 @@ ul#navigation {
 ul#navigation li {
     display:inline;
     float:left;
-    width:100px;
-    margin-left:1px;
+    width:130px;
+    margin-left:3px;
     font-size: 18px;
 }
 
@@ -124,9 +124,9 @@ ul#navigation li a {
     font-weight: bold;
     font-family: 'Mouse Memoirs';
     font-size: 23px;
-/*    text-shadow: 1px 1px 1px #fff;*/
+    text-shadow: 0 0 1px #fff;
     float: left;
-    width: 100px;
+    width: 130px;
     height: 35px;
     color: #603d05;
     background: transparent url(pages/item.png) no-repeat bottom right;

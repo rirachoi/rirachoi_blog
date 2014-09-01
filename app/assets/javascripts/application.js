@@ -33,7 +33,6 @@ $(document).ready(function(){
   }
 
   $('.week_details').hide();
-  $('.pages-about').css({'background':'none'});
   $('.projects-index').css({'background':'none'});
 
 

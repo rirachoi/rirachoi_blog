@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => "pages#index"
+  root :to => "pages#about"
 
   resources :pages, :only => [:index]
   get 'pages/about' => 'pages#about'
