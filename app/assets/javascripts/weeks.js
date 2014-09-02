@@ -41,6 +41,13 @@ $(document).ready(function(){
     $('#Week12 .img-container').hide();
   }
 
+  var createHeader = function(){
+    var letterContainer = $('<div id="letter-container"><div/>').addClass('letter-container');
+    var weekHeader = $('<h2><a href="#">Web development Immersive<a/><h2/>');
+    letterContainer.append(weekHeader);
+    $('.weeks-index').before(letterContainer);
+  }
+
 
   $.ajax({
     url: '/weeks',
@@ -68,5 +75,5 @@ $(document).ready(function(){
 
   }); //end of weeks ajax
 
-
+  createHeader();
 }); // end of document.ready

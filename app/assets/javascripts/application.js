@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require lib/underscore
-//= require modernizr.custom.46884
-//= require jquery.slicebox
+//= require lib/jquery.lettering.js
+//= require lib/modernizr.custom.46884.js
+//= require lib/modernizr.custom.40443.js
 //= require project.js
 //= require pages.js
 //= require weeks.js
@@ -34,6 +34,6 @@ $(document).ready(function(){
 
   $('.week_details').hide();
   $('.projects-index').css({'background':'none'});
-
+  $("#letter-container h2 a").lettering();
 
 });

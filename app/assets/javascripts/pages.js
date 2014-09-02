@@ -32,13 +32,28 @@ $(document).ready(function(){
      )
     });
 
+
+  //////// contact js
+  var createHeader = function(){
+    var letterContainer = $('<div id="letter-container"><div/>').addClass('letter-container');
+    var weekHeader = $('<h2><a href="#">Contact<a/><h2/>');
+    letterContainer.append(weekHeader);
+    $('.pages-contact').before(letterContainer);
+  }
+
+  var createMsgHeader = function(){
+    var letterContainer = $('<div id="letter-container"><div/>').addClass('letter-container');
+    var weekHeader = $('<h2><a href="#">I am sorry,<a/><h2/>');
+    letterContainer.append(weekHeader);
+    $('.pages-about').before(letterContainer);
+  }
+
   var openDoor = function() {
      $('#check').attr('checked', true);
      $('.contact_info').fadeIn(2000);
   }
-  /// contact js
 
-  var openTimer = setTimeout(openDoor, 1000);
+  var openTimer = setTimeout(openDoor, 1300);
   $('.faceImg').css({'box-shadow':'none'});
 
 
@@ -49,5 +64,8 @@ $(document).ready(function(){
   $('#github').on('mouseleave', function(){
     $('#github').attr('src', '/assets/pages/github.png');
   });
+
+  createHeader();
+  createMsgHeader();
 
 });
