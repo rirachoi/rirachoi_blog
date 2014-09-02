@@ -502,12 +502,12 @@
   margin:auto auto auto 10px;
   font-size: 40px;
   font-family: 'Mouse Memoirs';
-  color: rgba(129, 125, 121, 0.7);
+  color: rgba(154, 108, 80, 0.9);
   text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
 }
 
 .demo-github a:hover{
-  color: rgb(223,50,50);
+  color: rgba(223,50,50,0.7);
 }
 
 .info header h2{

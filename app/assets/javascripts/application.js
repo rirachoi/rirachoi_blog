@@ -33,6 +33,7 @@ $(document).ready(function(){
   }
 
   $('.week_details').hide();
+  $('.pages-index').css({'background':'none'});
   $('.projects-index').css({'background':'none'});
   $("#letter-container h2 a").lettering();
 
