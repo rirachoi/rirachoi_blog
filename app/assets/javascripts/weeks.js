@@ -56,7 +56,7 @@ $(document).ready(function(){
 
     $('#Week12 .img-container .homeworkIMG').attr('src','/assets/worldmapnews.gif');
     $('#Week12 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/world_map_news');
-    $('#Week12 .img-container .homeworks p').text('Project 2');
+    $('#Week12 .img-container .homeworks p').text('Project 3');
     $('#Week12 .img-container > span').css({'vertical-align':'top'});
   }
 
