@@ -18,9 +18,16 @@
           <li class="what_i_learnt">- <%= s %></li>
         <% end %>
       </ul>
+
       <section class='img-container'>
-        <%= image_tag("", class: 'homeworkIMG', title: 'Best Homework for the week' )%>
-        <a class="show-me-the-code" title='Check the code' target="blank"><%= image_tag('pages/github.png', class: 'github')%></a>
+        <span class="homeworks">
+          <p>The best homework<br/>for the week</p>
+          <%= image_tag("", class: "homeworkIMG", title: 'Best Homework for the week' )%>
+        </span>
+        <span class="codes">
+          <p>Check the code</p>
+          <a class= "show-me-the-code" title='Check the code' target="blank"><%= image_tag('pages/github_icon.png', class: 'github')%></a>
+        </span>
       </section>
     </div>
   <% end %>

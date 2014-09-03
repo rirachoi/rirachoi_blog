@@ -31,14 +31,33 @@ $(document).ready(function(){
     $('#Week4 .img-container .homeworkIMG').attr('src','/assets/book_keeper.gif');
     $('#Week4 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk4d3/book_keeper');
 
-    $('#Week5 .img-container').hide();
-    $('#Week6 .img-container').hide();
-    $('#Week7 .img-container').hide();
-    $('#Week8 .img-container').hide();
-    $('#Week9 .img-container').hide();
+    $('#Week5 .img-container .homeworkIMG').attr('src','/assets/soluho_calendar.gif');
+    $('#Week5 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/SOLUHO_calendar');
+    $('#Week5 .img-container .homeworks p').text('Project 1');
+    $('#Week5 .img-container > span').css({'vertical-align':'top'});
+
+    $('#Week6 .img-container .homeworkIMG').attr('src','/assets/imageslider.gif');
+    $('#Week6 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk6d5/carousel');
+
+    $('#Week7 .img-container .homeworkIMG').attr('src','/assets/paintr.gif');
+    $('#Week7 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk7d1/paintr');
+
+    $('#Week8 .img-container .homeworkIMG').attr('src','/assets/fireball.gif');
+    $('#Week8 .img-container .show-me-the-code').attr('href','https://github.com/lyntco/fireball');
+    $('#Week8 .img-container .homeworks p').text('Project 2');
+    $('#Week8 .img-container > span').css({'vertical-align':'top'});
+
+    $('#Week9 .img-container .homeworkIMG').attr('src','/assets/todo.gif');
+    $('#Week9 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk9d1/todos');
+
     $('#Week10 .img-container').hide();
+
     $('#Week11 .img-container').hide();
-    $('#Week12 .img-container').hide();
+
+    $('#Week12 .img-container .homeworkIMG').attr('src','/assets/worldmapnews.gif');
+    $('#Week12 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/world_map_news');
+    $('#Week12 .img-container .homeworks p').text('Project 2');
+    $('#Week12 .img-container > span').css({'vertical-align':'top'});
   }
 
   var createHeader = function(){

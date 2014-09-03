@@ -90,42 +90,36 @@
 }
 
 
-.img-container img{
+.img-container > span{
   display: inline-block;
   margin: 1%;
-  box-shadow: none;
-  border-radius: 5px;
+  vertical-align: bottom;
 }
 
-.homeworkIMG{
+.homeworks img{
   width: 150px;
   height: 100px;
-  border: 10px solid rgba(0,0,0,0.9);
   margin-left: 2%;
+  box-shadow: none;
 }
 
 .github{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 120px;
   right: 0;
   box-shadow: none;
 }
 
 .img-container{
   margin-left: 10%;
+  margin-top: -40px;
+}
+
+.img-container p{
+  font-size: 15px;
 }
 
 
-
-
-/*.week_content{
-  position: fixed;
-  right:0;
-  width: 300px;
-  height: 700px;
-  background-color: rgba(0,0,0,0.6);
-  color: white;
-}*/
 
 
 

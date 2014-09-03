@@ -68,4 +68,10 @@ $(document).ready(function(){
   createHeader();
   createMsgHeader();
 
+  ////// pages index js
+  var animationWord = function(){
+
+  }
+
+      $('#main-left').animate({marginLeft:100+'px'}, 1000);
 });

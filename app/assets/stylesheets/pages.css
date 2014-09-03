@@ -284,12 +284,13 @@ input[type="checkbox"]:checked ~ #der {
 
 #main-body{
   width: 800px;
+  overflow: hidden;
 
 }
 
 #main-left, #main-right, #main-middle{
-  width: 100px;
   display: inline-block;
+  margin: 100px;
 }
 
 #main-middle img{
@@ -301,8 +302,12 @@ input[type="checkbox"]:checked ~ #der {
   width: 200px;
   height: 50px;
   border-radius: 5px;
-  font-size: 30px;
+  font-size: 50px;
   font-family: 'Mouse Memoirs';
   color: rgba(225, 225, 225, 0.8);
   margin: 10px;
+}
+
+#main-left{
+  margin-left: -500px;
 }
