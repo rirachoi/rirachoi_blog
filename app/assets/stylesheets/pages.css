@@ -311,7 +311,7 @@ input[type="checkbox"]:checked ~ #der {
   margin: -65px auto auto 10%;
 }
 
-#main-left. #main-right{
+#main-left, #main-right{
   margin:auto;
 }
 
