@@ -85,5 +85,11 @@ $(document).ready(function(){
       .typistAdd('> Let\'s chat about code :)\n');
     }
 
+  var coffeeShaking = function(){
+    $('#coffee-img').animate({marginBottom: 200+'px'});
+    $('#coffee-img').animate({marginBottom:-200+'px'});
+
+  }
   typist();
+
 });

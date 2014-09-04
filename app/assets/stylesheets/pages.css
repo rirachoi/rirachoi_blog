@@ -85,13 +85,6 @@ img{
 
 }
 
-#header_yellow{
-   margin-top: 5%;
-  background: url(header/header_yellow.png) no-repeat;
-  background-size: 104% 114%;
-  font-size: 70px;
-}
-
 #header_purple{
    margin-top: 5%;
   background: url(header/header_puple.png) no-repeat;
