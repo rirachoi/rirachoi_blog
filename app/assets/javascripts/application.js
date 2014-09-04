@@ -18,7 +18,6 @@
 //= require lib/modernizr.custom.40443.js
 //= require lib/jquery.typist.js
 //= require lib/jquery.typist.min.js
-//= require project.js
 //= require pages.js
 //= require weeks.js
 

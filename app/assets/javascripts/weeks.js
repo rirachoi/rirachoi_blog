@@ -19,42 +19,42 @@ $(document).ready(function(){
   }
 
   var homeworkIMG = function(){
-    $('#Week1 .img-container .homeworkIMG').attr('src','/assets/happytails.gif');
+    $('#Week1 .img-container .homeworkIMG').attr('src','/assets/weeks/happytails.gif');
     $('#Week1 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk1d5/happitails');
 
-    $('#Week2 .img-container .homeworkIMG').attr('src','/assets/mta.gif');
+    $('#Week2 .img-container .homeworkIMG').attr('src','/assets/weeks/mta.gif');
     $('#Week2 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk2d4/mta_2');
 
-    $('#Week3 .img-container .homeworkIMG').attr('src','/assets/alls_watch.gif');
+    $('#Week3 .img-container .homeworkIMG').attr('src','/assets/weeks/alls_watch.gif');
     $('#Week3 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk3d3/alls_watch');
 
-    $('#Week4 .img-container .homeworkIMG').attr('src','/assets/book_keeper.gif');
+    $('#Week4 .img-container .homeworkIMG').attr('src','/assets/weeks/book_keeper.gif');
     $('#Week4 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk4d3/book_keeper');
 
-    $('#Week5 .img-container .homeworkIMG').attr('src','/assets/soluho_calendar.gif');
+    $('#Week5 .img-container .homeworkIMG').attr('src','/assets/weeks/soluho_calendar.gif');
     $('#Week5 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/SOLUHO_calendar');
     $('#Week5 .img-container .homeworks p').text('Project 1');
     $('#Week5 .img-container > span').css({'vertical-align':'top'});
 
-    $('#Week6 .img-container .homeworkIMG').attr('src','/assets/imageslider.gif');
+    $('#Week6 .img-container .homeworkIMG').attr('src','/assets/weeks/imageslider.gif');
     $('#Week6 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk6d5/carousel');
 
-    $('#Week7 .img-container .homeworkIMG').attr('src','/assets/paintr.gif');
+    $('#Week7 .img-container .homeworkIMG').attr('src','/assets/weeks/paintr.gif');
     $('#Week7 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk7d1/paintr');
 
-    $('#Week8 .img-container .homeworkIMG').attr('src','/assets/fireball.gif');
+    $('#Week8 .img-container .homeworkIMG').attr('src','/assets/weeks/fireball.gif');
     $('#Week8 .img-container .show-me-the-code').attr('href','https://github.com/lyntco/fireball');
     $('#Week8 .img-container .homeworks p').text('Project 2');
     $('#Week8 .img-container > span').css({'vertical-align':'top'});
 
-    $('#Week9 .img-container .homeworkIMG').attr('src','/assets/todo.gif');
+    $('#Week9 .img-container .homeworkIMG').attr('src','/assets/weeks/todo.gif');
     $('#Week9 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/WDI5-homework-rirachoi/tree/master/wk9d1/todos');
 
     $('#Week10 .img-container').hide();
 
     $('#Week11 .img-container').hide();
 
-    $('#Week12 .img-container .homeworkIMG').attr('src','/assets/worldmapnews.gif');
+    $('#Week12 .img-container .homeworkIMG').attr('src','/assets/weeks/worldmapnews.gif');
     $('#Week12 .img-container .show-me-the-code').attr('href','https://github.com/rirachoi/world_map_news');
     $('#Week12 .img-container .homeworks p').text('Project 3');
     $('#Week12 .img-container > span').css({'vertical-align':'top'});

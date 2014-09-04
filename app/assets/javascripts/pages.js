@@ -85,11 +85,15 @@ $(document).ready(function(){
       .typistAdd('> Let\'s chat about code :)\n');
     }
 
-  var coffeeShaking = function(){
-    $('#coffee-img').animate({marginBottom: 200+'px'});
-    $('#coffee-img').animate({marginBottom:-200+'px'});
-
+  var coffeeUp = function(){
+    $('#coffee-img').animate({marginBottom: 50+'px'});
   }
-  typist();
 
+  var coffeeDown = function(){
+    $('#coffee-img').animate({marginBottom: 0+'px'});
+  }
+
+  var typeTimer = setTimeout(typist, 1500);
+  var coffeeUpTimer = setTimeout(coffeeUp, 15000);
+  var coffeeDownTimer = setTimeout(coffeeDown, 16000);
 });
