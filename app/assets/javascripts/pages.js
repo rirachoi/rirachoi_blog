@@ -69,9 +69,21 @@ $(document).ready(function(){
   createMsgHeader();
 
   ////// pages index js
-  var animationWord = function(){
 
-  }
+  // ternimal typing effect
+  var typist = function(){
+    $('.typist')
+      .typist({
+        speed: 12,
+        text: '\n> Hello, there!\n'
+      })
+      .typistAdd('> Welcome to Rira\'s site.\n')
+      .typistAdd('> I\'m a full-stack developer\n')
+      .typistAdd('> who loves Ruby on Rails\n')
+      .typistAdd('> and JavaScript.\n')
+      .typistAdd('> Contact me!\n')
+      .typistAdd('> Let\'s chat about code :)\n');
+    }
 
-      $('#main-left').animate({marginLeft:100+'px'}, 1000);
+  typist();
 });

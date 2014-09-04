@@ -283,31 +283,76 @@ input[type="checkbox"]:checked ~ #der {
 /*********** main-page ***********/
 
 #main-body{
-  width: 800px;
+  width: 1800px;
+  height: 700px;
+  margin: auto auto auto -30%;
+}
+
+#main-window{
+  margin: 5% 0 0 -5%;
+  width: 1500px;
+  height:900px;
   overflow: hidden;
-
 }
 
-#main-left, #main-right, #main-middle{
+#main-left, #macbook{
+  box-shadow: none;
   display: inline-block;
-  margin: 100px;
+  vertical-align: bottom;
+  margin-top: 3%;
 }
 
-#main-middle img{
-  background-color: white;
-  border-radius: 100%;
+#shelf{
+  background: url(book-shelf.png) no-repeat;
+  background-size: 100% 100%;
+  width: 1300px;
+  height: 150px;
+  z-index: -1;
+  margin: -65px auto auto 10%;
 }
 
-#main-left > div, #main-right > div {
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  font-size: 50px;
-  font-family: 'Mouse Memoirs';
-  color: rgba(225, 225, 225, 0.8);
-  margin: 10px;
+#main-left. #main-right{
+  margin:auto;
 }
 
-#main-left{
-  margin-left: -500px;
+#coffee-img{
+  width: 300px;
+  height: 300px;
+  box-shadow: none;
+}
+
+#coffee-img:hover{
+  -moz-transform:rotate(-10deg);
+  -webkit-transform:rotate(-10deg);
+  transform:rotate(-10deg);
+}
+
+#lamp-img{
+  width:400px;
+  height:600px;
+  box-shadow: none;
+}
+
+
+#macbook{
+  background: url(macbook1.png) no-repeat;
+  background-size: 100% 100%;
+  margin:auto;
+  width: 700px;
+  height: 400px;
+}
+
+
+.typist{
+  color: rgba(0,225,0,0.7);
+  font-family: Menlo;
+  font-size: 23px;
+}
+
+#mac-screen{
+  width: 420px;
+  height: 280px;
+  margin: -5px auto 10px auto;
+  overflow: hidden;
+  text-align: left;
 }

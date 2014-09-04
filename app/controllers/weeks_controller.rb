@@ -7,13 +7,4 @@ class WeeksController < ApplicationController
         format.json{ render :json => @weeks }
       end
   end
-
-  def show
-    @week = Week.find params[:id]
-      respond_to do |format|
-        format.html {}
-        format.js{ render :json => @week }
-        format.json{ render :json => @week }
-      end
-  end
 end
