@@ -6,6 +6,7 @@ This is my personal web site that is built by Ruby on Rails and jQuery.
 
 This Project's Demo
 =========
+![alt tag](http://i.imgur.com/wZYOWO5.gif)
 
 [DEMO](http://rirachoi-blog.herokuapp.com/)
 
