@@ -21,5 +21,5 @@ Welcome to my sleepless nights collection. Here you will find :
 * plugins/jquery.typist-master/README.md
 * plugins/lettering/README.md
 
-** This project is still being developed! **
+** This project is still in development! **
 
