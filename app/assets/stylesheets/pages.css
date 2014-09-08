@@ -351,3 +351,16 @@ input[type="checkbox"]:checked ~ #der {
   overflow: hidden;
   text-align: left;
 }
+
+
+@media(max-width: 1024px){
+  #check{
+    display: none;
+  }
+
+  #izq, #der{
+    display: none;
+  }
+
+
+}
