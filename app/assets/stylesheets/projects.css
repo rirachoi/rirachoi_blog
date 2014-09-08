@@ -540,5 +540,30 @@
     float: none;
     margin: 30px auto 60px;
   }
+
+  #main_body {
+    width: 1024px;
+    overflow: hidden;
+    margin: auto auto auto -15%;
+  }
+
+  #main-window{
+    width:1024px;
+    overflow: hidden;
+    margin: 5% 0 0 auto;
+  }
+
+  #shelf{
+    width: 1000px;
+    height: 150px;
+    z-index: -1;
+    margin: -65px auto auto 6%
+  }
+
+  #main-left{
+    margin-left: 20px;
+    width: 250px;
+  }
+
 }
 

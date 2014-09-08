@@ -51,9 +51,9 @@
   background-size: 100% 100%;
   color: black;
   font-size: 30px;
-  position: fixed;
+  position: absolute;
   right: 2%;
-  top:20%;
+  top: 630px;
   overflow: auto;
   -moz-transform:rotate(-12deg);
   -webkit-transform:rotate(-12deg);
@@ -117,6 +117,32 @@
 
 .img-container p{
   font-size: 15px;
+}
+
+.btn-close{
+  border-radius: 100%;
+  height: 22px;
+  width: 20px;
+  background-color: rgba(158, 146, 139, 0.6);
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  right: 70px;
+  top: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-close:hover{
+  color: #765B35;
+  transform: scale(1.2,1.2);
+}
+
+.week_details img:hover{
+  transform: scale(1.2,1.2);
+
 }
 
 

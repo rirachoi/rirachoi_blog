@@ -11,6 +11,7 @@
   <% @weeks.each do |week| %>
     <% week_class_name = week.name.gsub(/ /, "")%>
     <div id="<%=week_class_name %>">
+      <span class="btn-close">x</span>
       <h2 class="week_name"><%= week.name %></h2>
 
       <ul>

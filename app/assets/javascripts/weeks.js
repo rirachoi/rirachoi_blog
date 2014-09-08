@@ -95,4 +95,10 @@ $(document).ready(function(){
   }); //end of weeks ajax
 
   createHeader();
+
+  $('.btn-close').on('click',function(){
+    $('.week_details').hide();
+    $('#container').animate({marginLeft:0}, 1000);
+  });
+
 }); // end of document.ready
