@@ -80,7 +80,9 @@ $(document).ready(function(){
       event.preventDefault();
       var week_num = $(this).find('span.weekNum').text();
       $(this).toggleClass('boxAnimation-target')
+      // Show the Week's details(What I leant and the best homework for the week)
       $('.week_details').fadeOut(500);
+      // container(spring-note moving to left so It looks like inline-block)
       $('#container').animate({marginLeft:-20+'%'}, 1000);
       $('.week_details').animate({right:15+'%'}, 1000, function(){
         $("html, body").animate({ scrollTop: ($('#container').height()+200) }, 'slow')

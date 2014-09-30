@@ -25,17 +25,13 @@
 
 $(document).ready(function(){
 
-  $(window).scroll(function(e){
-    parallax();
-  });
-  function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.bg').css('top',-(scrolled*0.2)+'px');
-  }
-
   $('.week_details').hide();
   $('.pages-index').css({'background':'none'});
   $('.projects-index').css({'background':'none'});
   $("#letter-container h2 a").lettering();
+
+  if (window.width < 500){
+
+  }
 
 });

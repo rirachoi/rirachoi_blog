@@ -18,13 +18,11 @@
     </ul>
 
 
-    <div class='bg'></div>
     <div id='blank'></div>
-    <div id='container' class="<%= params[:controller] %>-<%= params[:action] %>">
-      <%= yield %>
+    <div class='big-container'>
+      <div id='container' class="<%= params[:controller] %>-<%= params[:action] %>">
+        <%= yield %>
+      </div>
     </div>
-
-
-
   </body>
 </html>

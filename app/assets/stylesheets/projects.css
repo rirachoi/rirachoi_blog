@@ -285,7 +285,7 @@
   width: 260px;
   height: 400px;
   margin: 2%;
-  display: inline-block;
+  float: left;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
@@ -530,7 +530,6 @@
 .projects-index{
   background: url(old-lather-book.png) no-repeat;
   background-size: 100% 100%;
-  padding:0 10% 0 10%;
 }
 
 
@@ -541,5 +540,34 @@
     margin: 30px auto 60px;
   }
 
+  #main-right{
+    top: 50px;
+    left: 73%;
+    /* display: block; */
+    position: absolute;
+  }
+
+
+  ul#navigation {
+    right:0;
+    left:0;
+  }
+
+  ul#navigation li {
+    width:100px;
+    font-size: 20px;
+    float: left;
+  }
+
+  ul#navigation li a {
+    width: 100px;
+    height: 35px;
+  }
+
+  .weeks {
+    margin: 30px auto 60px;
+  }
+
 }
+
 
