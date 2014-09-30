@@ -1,6 +1,8 @@
 
 $(document).ready(function(){
 
+  var animatePixel;
+
   var createWeekContainer = function(response){
 
     for(var i=0; i<(response.length); i++){
@@ -16,6 +18,15 @@ $(document).ready(function(){
       $('.weeks').append($weekContainer);
     }
 
+  }
+
+  var createHeader = function(){
+    var currentWindow = $('#container').width();
+    var letterContainer = $('<div id="letter-container"></div>').addClass('letter-container wdi-header');
+    var weekHeader = $('<h2><a href="#">Web development Immersive<a/><h2/>');
+
+    letterContainer.append(weekHeader);
+    $('.weeks-index').before(letterContainer);
   }
 
   var homeworkIMG = function(){
@@ -60,13 +71,6 @@ $(document).ready(function(){
     $('#Week12 .img-container > span').css({'vertical-align':'top'});
   }
 
-  var createHeader = function(){
-    var letterContainer = $('<div id="letter-container"><div/>').addClass('letter-container');
-    var weekHeader = $('<h2><a href="#">Web development Immersive<a/><h2/>');
-    letterContainer.append(weekHeader);
-    $('.weeks-index').before(letterContainer);
-  }
-
 
   $.ajax({
     url: '/weeks',
@@ -76,6 +80,7 @@ $(document).ready(function(){
     createWeekContainer(data);
     homeworkIMG();
 
+
     $('.weeks > div').on('click', function(event){
       event.preventDefault();
       var week_num = $(this).find('span.weekNum').text();
@@ -83,14 +88,20 @@ $(document).ready(function(){
       // Show the Week's details(What I leant and the best homework for the week)
       $('.week_details').fadeOut(500);
       // container(spring-note moving to left so It looks like inline-block)
-      $('#container').animate({marginLeft:-20+'%'}, 1000);
-      $('.week_details').animate({right:15+'%'}, 1000, function(){
-        $("html, body").animate({ scrollTop: ($('#container').height()+200) }, 'slow')
+      $('#container').animate({marginLeft:-5+'%'}, 1000);
+
+      var containerWid = $('#container').width();
+      var bigContainerWid = $('.big-container').width();
+      var margins = bigContainerWid - containerWid
+      animatePixel = margins / 2
+
+      $('.week_details').animate({right:animatePixel+'px'}, 1000, function(){
+        $("html, body").animate({ scrollTop: ($('#container').height()/2) }, 'slow')
         $('.week_details').fadeIn(700);
         $('.week_details div').hide();
         $('#Week'+week_num).fadeIn(300);
         $this = $(this)
-        $this.animate({marginRight:-15+'%'}, 500);
+        $this.animate({marginRight:-5+'%'}, 500);
       }); // end of week_details animation
     }); //end of click weekContaine
 
@@ -100,7 +111,7 @@ $(document).ready(function(){
 
   $('.btn-close').on('click',function(){
     $('.week_details').hide();
-    $('#container').animate({marginLeft:0}, 1000);
+    $('#container').animate({marginLeft:animatePixel+'px'}, 1000);
   });
 
 }); // end of document.ready

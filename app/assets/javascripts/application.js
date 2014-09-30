@@ -30,8 +30,11 @@ $(document).ready(function(){
   $('.projects-index').css({'background':'none'});
   $("#letter-container h2 a").lettering();
 
-  if (window.width < 500){
-
+  var currentWindow = $('#container').width();
+  if (currentWindow < 500){
+    $(".letter-container h2 a span").css({'font-size':"80px"});
+  } else {
+    console.log('The screen is ' +  currentWindow);
   }
 
 });
